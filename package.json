@@ -21,6 +21,7 @@
     "gulp-if": "~1.2",
     "gulp-duration": "~0.0",
     "gulp-htmlmin": "~1.1",
+    "gulp-data": "~1.2",
     "browser-sync": "~2.9",
     "require-dir": "~0.3"
   }

@@ -15,7 +15,7 @@ gulp.task('watch:tasks', function() {
 	gulp.watch(path.source.main + '*.*', ['common']);
 
 	// Templates
-	gulp.watch(path.source.template + '**', ['templates:common']);
+	gulp.watch([path.source.template + '**', path.source.data + '**'], ['templates:common']);
 
 	// Styles
 	gulp.watch(path.source.style + '**', ['styles:common']);

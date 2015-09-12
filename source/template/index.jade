@@ -2,25 +2,25 @@ doctype html
 html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/profile#')
 	head
 		meta(charset='utf-8')
-		title Thomas Deinhamer — Thasmo
+		title=content.website.title
 
-		meta(name='description', content='Curious all day, awake at night.')
+		meta(name='description', content=content.website.description)
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 
-		meta(property='og:title', content='Thomas Deinhamer — Thasmo')
-		meta(property='og:description', content='Curious all day, awake at night.')
-		meta(property='og:url', content='http://thasmo.com/')
-		meta(property='og:image', content='http://gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06?s=256')
+		meta(property='og:title', content=content.website.title)
+		meta(property='og:description', content=content.website.description)
+		meta(property='og:url', content=content.self.address)
+		meta(property='og:image', content=content.self.avatar)
 		meta(property='og:type', content='profile')
-		meta(property='profile:first_name', content='Thomas')
-		meta(property='profile:last_name', content='Deinhamer')
+		meta(property='profile:first_name', content=content.self.name.first)
+		meta(property='profile:last_name', content=content.self.name.last)
 		meta(property='profile:username', content='Thasmo')
 		meta(property='profile:gender', content='male')
 
-		meta(name='twitter:title', content='Thomas Deinhamer — Thasmo')
-		meta(name='twitter:description', content='Curious all day, awake at night.')
-		meta(name='twitter:url', content='http://thasmo.com/')
-		meta(name='twitter:image', content='http://gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06?s=256')
+		meta(name='twitter:title', content=content.website.title)
+		meta(name='twitter:description', content=content.website.description)
+		meta(name='twitter:url', content=content.self.address)
+		meta(name='twitter:image', content=content.self.avatar)
 		meta(name='twitter:card', content='summary')
 		meta(name='twitter:site', content='@thomasdeinhamer')
 
@@ -30,7 +30,7 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 
 		meta(property='fb:admins', content='1351449068')
 
-		link(rel='canonical', href='http://thasmo.com/')
+		link(rel='canonical', href=content.self.address)
 
 		link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700')
 		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css')
@@ -45,9 +45,9 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 	body.page
 		article.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			section.profile-figure
-				img.profile-photo(itemprop='image', src='//gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06?s=256', alt='Photo of Thomas Deinhamer')
-				a.profile-employer(href='http://www.pixelart.at/')
-					img(src='//gravatar.com/avatar/573dc407c63009618cbc693f21c23428?s=256', alt='Logo of pixelart GmbH')
+				img.profile-photo(itemprop='image', src=content.self.avatar, alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+				a.profile-employer(href=content.employer.address)
+					img(src=content.employer.avatar, alt='Logo of ' + content.employer.name)
 
 			p.profile-quote
 				| Curious all day,
@@ -55,14 +55,9 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 				| awake at night.
 
 		p.bar
-			a.network.network--facebook(href='//facebook.com/thomasdeinhamer', rel='me')
-				i.fa.fa-facebook
-			a.network.network--twitter(href='//twitter.com/thomasdeinhamer', rel='me')
-				i.fa.fa-twitter
-			a.network.network--github(href='//github.com/thasmo', rel='me')
-				i.fa.fa-github
-			a.network.network--google(href='//google.com/+ThomasDeinhamer', rel='me')
-				i.fa.fa-google-plus
+			each network in content.network
+				a.network(class='network--' + network.name, href=network.address, rel='me')
+					i.fa(class='fa-' + network.name)
 
 		noscript
 			iframe(src='//www.googletagmanager.com/ns.html?id=GTM-PT4NQB', style='display:none;')

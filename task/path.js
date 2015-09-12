@@ -10,6 +10,7 @@ module.exports = {
 	source: {
 		main: 'source/',
 		template: 'source/template/',
-		style: 'source/style/'
+		style: 'source/style/',
+		data: 'source/data/'
 	}
 };

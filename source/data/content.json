@@ -1,0 +1,34 @@
+{
+	"website": {
+		"title": "Thomas Deinhamer — Thasmo",
+		"description": "Curious all day, awake at night."
+	},
+	"self": {
+		"name": {
+			"first": "Thomas",
+			"last": "Deinhamer"
+		},
+		"address": "http://thasmo.com/",
+		"avatar": "//gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06?s=256"
+	},
+	"employer": {
+		"name": "pixelart GmbH",
+		"address": "http://www.pixelart.at/",
+		"avatar": "//gravatar.com/avatar/573dc407c63009618cbc693f21c23428?s=256"
+	},
+	"network": [
+		{
+			"name": "facebook",
+			"address": "//facebook.com/thomasdeinhamer"
+		}, {
+			"name": "twitter",
+			"address": "//twitter.com/thomasdeinhamer"
+		}, {
+			"name": "github",
+			"address": "//github.com/thasmo"
+		}, {
+			"name": "google-plus",
+			"address": "//google.com/+ThomasDeinhamer"
+		}
+	]
+}
