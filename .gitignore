@@ -1,0 +1,6 @@
+# Project
+/public/**
+!/public/.gitkeep
+
+# Development
+/node_modules/

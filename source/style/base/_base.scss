@@ -1,0 +1,30 @@
+// _base.scss
+
+* {
+	&, &::after, &::before {
+		box-sizing: border-box;
+	}
+
+	&::selection {
+		color: #999;
+		background: #323232;
+	}
+}
+
+html {
+	height: 100%;
+	width: 100%;
+
+	background: #fff;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #9ab8b6;
+	text-decoration: none;
+}

@@ -1,0 +1,85 @@
+// _profile.scss
+
+.profile {
+	position: relative;
+	top: -10%;
+	display: inline-block;
+	vertical-align: middle;
+
+	&-header {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		text-align: left;
+	}
+
+	&-name,
+	&-position {
+		margin: 0;
+		padding: 5px 15px;
+		font-weight: 300;
+	}
+
+	&-name {
+		font-size: 42px;
+		background: #fff;
+		border-radius: 2px;
+	}
+
+	&-position {
+		color: #999;
+		font-size: 20px;
+
+		a:hover {
+			border-bottom: 1px dotted #555;
+		}
+	}
+
+	&-figure {
+		position: relative;
+		margin: 0;
+	}
+
+	&-photo {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border-radius: 100%;
+	}
+
+	&-employer {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 72px;
+		height: 72px;
+
+		overflow: hidden;
+
+		border: 1px solid #fff;
+		border-radius: 2px;
+		background: #fff;
+	}
+
+	&-quote {
+		float: left;
+		margin: 10px 0 0 0;
+
+		font-size: 28px;
+		text-align: right;
+		letter-spacing: -.01em;
+		white-space: nowrap;
+
+		&::before {
+			content: '\f121';
+			margin-right: 5px;
+			color: #79B51C;
+			font-family: 'FontAwesome', fantasy;
+		}
+	}
+
+	@media(min-width: 480px) {
+		top: auto;
+	}
+}

@@ -1,0 +1,25 @@
+// _page.scss
+
+.page {
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+
+	color: #555;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.2;
+
+	cursor: default;
+	background: #fafafa;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 0;
+
+		vertical-align: middle;
+	}
+}
