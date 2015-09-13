@@ -1,0 +1,41 @@
+// _panel.scss
+
+.panel {
+	opacity: 0;
+	overflow: auto;
+
+	position: absolute;
+	top: 0;
+	bottom: 50px;
+	right: 0;
+	z-index: 1;
+
+	width: 100vw;
+	padding: 25px;
+
+	text-align: left;
+
+	background: #fff;
+	transition: opacity 250ms, transform 250ms;
+
+	@media (min-width: 480px) {
+		opacity: 1;
+
+		bottom: 0;
+
+		width: 640px;
+		max-width: 100%;
+		padding: 75px 125px 75px 75px;
+
+		transform: translateX(100%);
+	}
+}
+
+.page:target .panel {
+	opacity: .9;
+
+	@media (min-width: 480px) {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

@@ -1,8 +1,14 @@
 // main.scss
 
 @import '../../bower_components/sanitize-css/sanitize';
+@import 'base/variables';
+@import 'base/functions';
 @import 'base/base';
 @import 'component/page';
 @import 'component/profile';
 @import 'component/bar';
 @import 'component/network';
+@import 'component/panel';
+@import 'component/project';
+@import 'component/section';
+@import 'component/contact';

@@ -1,7 +1,10 @@
 {
 	"website": {
 		"title": "Thomas Deinhamer — Thasmo",
-		"description": "Curious all day, awake at night."
+		"description": "Curious all day, awake at night.",
+		"tracking": {
+			"key": "GTM-PT4NQB"
+		}
 	},
 	"self": {
 		"name": {
@@ -16,19 +19,70 @@
 		"address": "http://www.pixelart.at/",
 		"avatar": "//gravatar.com/avatar/573dc407c63009618cbc693f21c23428"
 	},
-	"network": [
+	"projects": [
 		{
-			"name": "facebook",
-			"address": "//facebook.com/thomasdeinhamer"
+			"name": "Yeoman Email Generator",
+			"description": "Yeoman generator that scaffolds out a project for crafting email templates.",
+			"address": "https://www.npmjs.com/package/@thasmo/generator-email"
 		}, {
-			"name": "twitter",
-			"address": "//twitter.com/thomasdeinhamer"
+			"name": "Vagrant Box for PHP Development",
+			"description": "A custom Vagrant Box for PHP Web Development.",
+			"address": "https://github.com/thasmo/vagrant.box"
 		}, {
-			"name": "github",
-			"address": "//github.com/thasmo"
+			"name": "Project Honeypot Http:BL Library",
+			"description": "A simple PHP library for querying the Project Honeypot Http:BL API.",
+			"address": "https://packagist.org/packages/thasmo/honeypot-blacklist"
 		}, {
-			"name": "google-plus",
-			"address": "//google.com/+ThomasDeinhamer"
+			"name": "Website Boilerplate",
+			"description": "Personal Gulp boilerplate for basic frontend web projects.",
+			"address": "https://github.com/thasmo/gulp.boilerplate"
+		}, {
+			"name": "Portable Cygwin",
+			"description": "Portable version of Cygwin, a collection of tools which provide a Linux look and feel environment for Windows.",
+			"address": "https://github.com/thasmo/portableapps.cygwin"
+		}, {
+			"name": "Packer Templates",
+			"description": "Various packer templates for building basic virtual machine images.",
+			"address": "https://github.com/thasmo/packer.templates"
+		}
+	],
+	"channels": [
+		{
+			"type": "email",
+			"icon": "envelope-o",
+			"label": "Write an email to me.",
+			"address": "mailto:thasmo@gmail.com",
+			"primary": false
+		}, {
+			"type": "skype",
+			"icon": "skype",
+			"label": "Catch me on Skype.",
+			"address": "skype:thasmo?chat",
+			"primary": false
+		}, {
+			"type": "twitter",
+			"icon": "twitter",
+			"label": "Follow me on Twitter.",
+			"address": "https://twitter.com/thomasdeinhamer",
+			"primary": true
+		}, {
+			"type": "github",
+			"icon": "github",
+			"label": "Visit me on GitHub.",
+			"address": "https://github.com/thasmo",
+			"primary": true
+		}, {
+			"type": "xing",
+			"icon": "xing",
+			"label": "Add me on Xing.",
+			"address": "https://www.xing.com/profile/Thomas_Deinhamer",
+			"primary": true
+		}, {
+			"type": "linkedin",
+			"icon": "linkedin",
+			"label": "Add me on LinkedIn.",
+			"address": "https://linkedin.com/in/thasmo",
+			"primary": true
 		}
 	]
 }
