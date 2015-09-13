@@ -3,8 +3,8 @@
 .network {
 	position: relative;
 	float: left;
-	width: 50%;
-	height: 50%;
+	width: 25%;
+	height: 50px;
 
 	color: #ccc;
 	font-size: 32px;
@@ -26,10 +26,14 @@
 		opacity: 1 !important;
 	}
 
+	.fa {
+		vertical-align: middle;
+	}
+
 	@media(min-width: 480px) {
 		display: block;
 		float: none;
-		width: auto;
+		width: 50px;
 		height: 25%;
 		padding: 0;
 	}
