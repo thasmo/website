@@ -9,7 +9,9 @@ var gulp = require('gulp'),
 gulp.task('common', function() {
 	var name = 'Common';
 
-	return gulp.src(path.source.main + '*.*')
+	return gulp.src(path.source.main + '*.*', {
+		dot: true
+	})
 		.pipe($.plumber(helper.error))
 		.pipe(gulp.dest(path.public.main))
 		.pipe($.duration(name))
