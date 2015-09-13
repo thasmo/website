@@ -51,7 +51,7 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 		<![endif]-->
 
 	body.page
-		article.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
+		main.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			section.profile-figure
 				img.profile-photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 				a.profile-employer(href=content.employer.address)
@@ -62,7 +62,7 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 				br
 				| awake at night.
 
-		p.bar
+		aside.bar
 			each network in content.network
 				a.network(class='network--' + network.name, href=network.address, rel='me')
 					i.fa(class='fa-' + network.name)
