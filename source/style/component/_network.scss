@@ -7,7 +7,7 @@
 	height: 50px;
 
 	color: #ccc;
-	font-size: 32px;
+	font-size: 28px;
 	text-decoration: none;
 
 	transition: color 250ms, opacity 250ms, background 250ms;
@@ -40,10 +40,6 @@
 	}
 }
 
-.network--facebook:hover {
-	background: #3b5998;
-}
-
 .network--twitter:hover {
 	background: #55acee;
 }
@@ -52,6 +48,10 @@
 	background: #333;
 }
 
-.network--google-plus:hover {
-	background: #dd4b39;
+.network--xing:hover {
+	background: #cfdc00;
+}
+
+.network--linkedin:hover {
+	background: #0077b5;
 }

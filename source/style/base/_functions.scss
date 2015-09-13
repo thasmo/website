@@ -1,0 +1,9 @@
+// _functions.scss
+
+@function color($key, $map: $colors) {
+	@return map-get($map, $key);
+}
+
+@function breakpoint($key, $map: $breakpoints) {
+	@return map-get($map, $key);
+}

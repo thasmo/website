@@ -34,7 +34,7 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 
 		noscript
 			link(rel='stylesheet', href='/static/style/main.css')
-			link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700')
+			link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400')
 			link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
 
 		script(src='/static/script/main.js')
@@ -42,7 +42,7 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 		script.
 			'use strict';
 			window.loadCSS('/static/style/main.css');
-			window.loadCSS('//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+			window.loadCSS('//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400');
 			window.loadCSS('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css');
 
 		<!--[if lt IE 9]>
@@ -50,8 +50,34 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 		script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js')
 		<![endif]-->
 
-	body.page
-		main.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
+	body.page(id="✓")
+		main.panel
+			h1=content.self.name.first + ' ' + content.self.name.last
+
+			section.section
+				p: b Web-Developer from Salzburg, Austria.
+
+			section.section
+				h2.section-title Side Projects
+
+				div.section-content
+					each project in content.projects
+						article.project
+							h3.project-title
+								a(href=project.address)=project.name
+							p.project-description=project.description
+
+			section.section
+				h2.section-title Contact
+
+				div.section-content
+					each channel in content.channels
+						p
+							a.contact(href=channel.address)
+								i.fa.fa-fw(class='fa-' + channel.icon)
+								| #{channel.label}
+
+		section.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			section.profile-figure
 				img.profile-photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 				a.profile-employer(href=content.employer.address)
@@ -63,9 +89,17 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 				| awake at night.
 
 		aside.bar
-			each network in content.network
-				a.network(class='network--' + network.name, href=network.address, rel='me')
-					i.fa(class='fa-' + network.name)
+			p.bar-social
+				each channel in content.channels
+					if channel.primary
+						a.network(class='network--' + channel.type, href=channel.address, rel='me')
+							i.fa(class='fa-' + channel.icon)
+
+			a.bar-button.bar-button--on(href='#✓')
+				i.fa.fa-circle-o
+
+			a.bar-button.bar-button--off(href='#')
+				i.fa.fa-dot-circle-o
 
 		noscript
 			iframe(src='//www.googletagmanager.com/ns.html?id=' + content.website.tracking.key, style='display:none;')
