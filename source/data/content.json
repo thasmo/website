@@ -1,7 +1,10 @@
 {
 	"website": {
 		"title": "Thomas Deinhamer — Thasmo",
-		"description": "Curious all day, awake at night."
+		"description": "Curious all day, awake at night.",
+		"tracking": {
+			"key": "GTM-PT4NQB"
+		}
 	},
 	"self": {
 		"name": {
