@@ -1,6 +1,9 @@
 // path.js
 
 module.exports = {
+	setup: {
+		bower: 'bower.json'
+	},
 	public: {
 		main: 'public/',
 		static: 'public/static/',
