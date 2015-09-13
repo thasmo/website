@@ -53,9 +53,9 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 	body.page
 		article.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			section.profile-figure
-				img.profile-photo(itemprop='image', src=content.self.avatar, alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+				img.profile-photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 				a.profile-employer(href=content.employer.address)
-					img(src=content.employer.avatar, alt='Logo of ' + content.employer.name)
+					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
 
 			p.profile-quote
 				| Curious all day,
