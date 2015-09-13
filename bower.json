@@ -1,0 +1,9 @@
+{
+  "name": "thasmo.com",
+  "description": "Personal website.",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "sanitize-css": "10up/sanitize.css#v2.0.0",
+    "loadcss": "~0.1"
+  }
+}
