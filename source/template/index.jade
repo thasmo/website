@@ -24,9 +24,9 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 		meta(name='twitter:card', content='summary')
 		meta(name='twitter:site', content='@thomasdeinhamer')
 
-		meta(name='geo.position', content='47.8;13.033333')
-		meta(name='geo.placename', content='Salzburg, Austria')
-		meta(name='geo.region', content='AT')
+		meta(name='geo.position', content=content.self.location.position)
+		meta(name='geo.placename', content=content.self.location.place)
+		meta(name='geo.region', content=content.self.location.country)
 
 		meta(property='fb:admins', content='1351449068')
 
