@@ -11,7 +11,7 @@
 			"first": "Thomas",
 			"last": "Deinhamer"
 		},
-		location: {
+		"location": {
 			"place": "Salzburg",
 			"position": "47.8;13.033333",
 			"country": "AT"
