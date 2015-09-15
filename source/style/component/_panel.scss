@@ -4,7 +4,7 @@
 	opacity: 0;
 	overflow: auto;
 
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 50px;
 	right: 0;
@@ -21,10 +21,11 @@
 	@media (min-width: 480px) {
 		opacity: 1;
 
+		right: 50px;
 		bottom: 0;
 
 		width: 640px;
-		max-width: 100%;
+		max-width: calc(100vw - 50px);
 		padding: 75px 125px 75px 75px;
 
 		transform: translateX(100%);

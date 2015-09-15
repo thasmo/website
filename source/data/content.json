@@ -11,6 +11,11 @@
 			"first": "Thomas",
 			"last": "Deinhamer"
 		},
+		"location": {
+			"place": "Salzburg",
+			"position": "47.8;13.033333",
+			"country": "AT"
+		},
 		"address": "http://thasmo.com/",
 		"avatar": "//gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06"
 	},
@@ -50,7 +55,7 @@
 		{
 			"type": "email",
 			"icon": "envelope-o",
-			"label": "Write an email to me.",
+			"label": "Write me an email.",
 			"address": "mailto:thasmo@gmail.com",
 			"primary": false
 		}, {
