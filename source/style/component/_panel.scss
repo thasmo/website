@@ -2,6 +2,7 @@
 
 .panel {
 	opacity: 0;
+	visibility: hidden;
 	overflow: auto;
 
 	position: fixed;
@@ -16,7 +17,7 @@
 	text-align: left;
 
 	background: #fff;
-	transition: opacity 250ms, transform 250ms;
+	transition: visibility 250ms, opacity 250ms, transform 250ms;
 
 	@media (min-width: 480px) {
 		opacity: 1;
@@ -34,6 +35,7 @@
 
 .page:target .panel {
 	opacity: .9;
+	visibility: visible;
 
 	@media (min-width: 480px) {
 		opacity: 1;
