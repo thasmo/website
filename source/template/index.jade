@@ -55,30 +55,31 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 
 	body.page(id="✓")
 		main.panel
-			h1=content.self.name.first + ' ' + content.self.name.last
+			div.panel-content
+				h1=content.self.name.first + ' ' + content.self.name.last
 
-			section.section
-				p: b Web-Developer from Salzburg, Austria.
+				section.section
+					p: b Web-Developer from Salzburg, Austria.
 
-			section.section
-				h2.section-title Side Projects
+				section.section
+					h2.section-title Side Projects
 
-				div.section-content
-					each project in content.projects
-						article.project
-							h3.project-title
-								a(href=project.address)=project.name
-							p.project-description=project.description
+					div.section-content
+						each project in content.projects
+							article.project
+								h3.project-title
+									a(href=project.address)=project.name
+								p.project-description=project.description
 
-			section.section
-				h2.section-title Contact
+				section.section
+					h2.section-title Contact
 
-				div.section-content
-					each channel in content.channels
-						p
-							a.contact(href=channel.address)
-								i.fa.fa-fw(class='fa-' + channel.icon)
-								| #{channel.label}
+					div.section-content
+						each channel in content.channels
+							p
+								a.contact(href=channel.address)
+									i.fa.fa-fw(class='fa-' + channel.icon)
+									| #{channel.label}
 
 		section.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			section.profile-figure
