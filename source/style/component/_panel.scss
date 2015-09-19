@@ -2,6 +2,7 @@
 
 .panel {
 	opacity: 0;
+	visibility: hidden;
 	overflow: auto;
 
 	position: fixed;
@@ -11,12 +12,15 @@
 	z-index: 1;
 
 	width: 100vw;
-	padding: 25px;
 
 	text-align: left;
 
 	background: #fff;
-	transition: opacity 250ms, transform 250ms;
+	transition: visibility 250ms, opacity 250ms, transform 250ms;
+
+	&__content {
+		padding: 25px;
+	}
 
 	@media (min-width: 480px) {
 		opacity: 1;
@@ -26,14 +30,18 @@
 
 		width: 640px;
 		max-width: calc(100vw - 50px);
-		padding: 75px 125px 75px 75px;
 
 		transform: translateX(100%);
+
+		&__content {
+			padding: 75px 125px 75px 75px;
+		}
 	}
 }
 
 .page:target .panel {
 	opacity: .9;
+	visibility: visible;
 
 	@media (min-width: 480px) {
 		opacity: 1;
