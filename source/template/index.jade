@@ -55,26 +55,26 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 
 	body.page(id="✓")
 		main.panel
-			div.panel-content
+			div.panel__content
 				h1=content.self.name.first + ' ' + content.self.name.last
 
 				section.section
 					p: b Web-Developer from Salzburg, Austria.
 
 				section.section
-					h2.section-title Side Projects
+					h2.section__title Side Projects
 
-					div.section-content
+					div.section__content
 						each project in content.projects
 							article.project
-								h3.project-title
+								h3.project__title
 									a(href=project.address)=project.name
-								p.project-description=project.description
+								p.project__description=project.description
 
 				section.section
-					h2.section-title Contact
+					h2.section__title Contact
 
-					div.section-content
+					div.section__content
 						each channel in content.channels
 							p
 								a.contact(href=channel.address)
@@ -82,27 +82,27 @@ html.no-js(lang='en', prefix='og:http://ogp.me/ns# profile:http://ogp.me/ns/prof
 									| #{channel.label}
 
 		section.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
-			section.profile-figure
-				img.profile-photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
-				a.profile-employer(href=content.employer.address)
+			section.profile__figure
+				img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+				a.profile__employer(href=content.employer.address)
 					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
 
-			p.profile-quote
+			p.profile__quote
 				| Curious all day,
 				br
 				| awake at night.
 
 		aside.bar
-			p.bar-social
+			p.bar__social
 				each channel in content.channels
 					if channel.primary
 						a.network(class='network--' + channel.type, href=channel.address, rel='me')
 							i.fa(class='fa-' + channel.icon)
 
-			a.bar-button.bar-button--on(href='#✓')
+			a.bar__button.bar__button--on(href='#✓')
 				i.fa.fa-circle-o
 
-			a.bar-button.bar-button--off(href='#')
+			a.bar__button.bar__button--off(href='#')
 				i.fa.fa-dot-circle-o
 
 		noscript

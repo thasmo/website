@@ -12,19 +12,19 @@
 	vertical-align: middle;
 	transition: opacity 250ms, filter 250ms, transform 250ms;
 
-	&-figure {
+	&__figure {
 		position: relative;
 		margin: 0;
 	}
 
-	&-photo {
+	&__photo {
 		display: block;
 		max-width: 100%;
 		height: auto;
 		border-radius: 100%;
 	}
 
-	&-employer {
+	&__employer {
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -43,7 +43,7 @@
 		transition: opacity 250ms;
 	}
 
-	&-quote {
+	&__quote {
 		opacity: 1;
 
 		float: left;
@@ -74,12 +74,12 @@
 
 .page:target .profile {
 	@media(max-width: 480px) {
-		&-photo {
+		&__photo {
 			filter: blur(5px);
 		}
 
-		&-employer,
-		&-quote {
+		&__employer,
+		&__quote {
 			opacity: 0;
 		}
 	}

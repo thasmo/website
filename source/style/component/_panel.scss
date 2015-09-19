@@ -18,7 +18,7 @@
 	background: #fff;
 	transition: visibility 250ms, opacity 250ms, transform 250ms;
 
-	&-content {
+	&__content {
 		padding: 25px;
 	}
 
@@ -33,7 +33,7 @@
 
 		transform: translateX(100%);
 
-		&-content {
+		&__content {
 			padding: 75px 125px 75px 75px;
 		}
 	}
