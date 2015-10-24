@@ -73,3 +73,9 @@ a {
 		color: color(accent);
 	}
 }
+
+wbr {
+	@media (min-width: 480px) {
+		display: block;
+	}
+}
