@@ -6,8 +6,8 @@
 	}
 
 	&::selection {
-		color: #999;
-		background: #323232;
+		color: color(blank);
+		background: color(accent);
 	}
 
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
