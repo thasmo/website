@@ -23,7 +23,7 @@ gulp.task('watch:tasks', function() {
 	gulp.watch(path.source.style + '**', ['styles:common']);
 
 	// Script
-	gulp.watch(path.source.script + '*.js', ['scripts:common']);
+	gulp.watch(path.source.script + '**/*.js', ['scripts:common']);
 });
 
 // Server

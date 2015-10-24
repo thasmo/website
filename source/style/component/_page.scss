@@ -15,8 +15,11 @@
 	text-align: center;
 	line-height: 1.5;
 
+	background-color: color(subtle);
+	background-repeat: no-repeat;
+	background-position: center;
+
 	cursor: default;
-	background: color(subtle);
 
 	-webkit-overflow-scrolling: auto;
 
