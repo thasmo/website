@@ -21,6 +21,10 @@ module.exports = {
 			collapseWhitespace: true
 		},
 
+		inlinesource: {
+			attribute: 'data-inline'
+		},
+
 		server: {
 			server: {
 				baseDir: path.public.main

@@ -7,7 +7,7 @@
 
 	position: fixed;
 	top: 0;
-	bottom: 50px;
+	bottom: 0;
 	right: 0;
 	z-index: 1;
 
@@ -15,8 +15,11 @@
 
 	text-align: left;
 
-	background: #fff;
+	background: rgba(255, 255, 255, .9);
+
 	transition: visibility 250ms, opacity 250ms, transform 250ms;
+
+	-webkit-overflow-scrolling: touch;
 
 	&__content {
 		padding: 25px;
@@ -31,6 +34,8 @@
 		width: 640px;
 		max-width: calc(100vw - 50px);
 
+		background: color(blank);
+
 		transform: translateX(100%);
 
 		&__content {
@@ -40,7 +45,7 @@
 }
 
 .page:target .panel {
-	opacity: .9;
+	opacity: 1;
 	visibility: visible;
 
 	@media (min-width: 480px) {

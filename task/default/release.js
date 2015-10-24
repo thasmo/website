@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
+    config = require('../config'),
     helper = require('../helper'),
     path = require('../path');
 
@@ -16,7 +17,7 @@ gulp.task('release:inline', function() {
 
 	return gulp.src(path.public.template + '*.html')
 		.pipe($.plumber(helper.error))
-		.pipe($.inlineSource())
+		.pipe($.inlineSource(config.plugin.inlinesource))
 		.pipe(gulp.dest(path.public.template))
 		.pipe($.duration(name))
 		.pipe(helper.success(name));

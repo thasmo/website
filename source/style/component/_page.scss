@@ -1,8 +1,11 @@
 // _page.scss
 
 .page {
-	height: 100%;
-	width: 100%;
+	position: fixed;
+	overflow: hidden;
+
+	height: 100vh;
+	width: 100vw;
 	vertical-align: middle;
 
 	color: lighten(color(base), 25);
@@ -14,6 +17,8 @@
 
 	cursor: default;
 	background: color(subtle);
+
+	-webkit-overflow-scrolling: auto;
 
 	&::before {
 		content: '';

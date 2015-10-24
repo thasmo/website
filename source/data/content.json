@@ -11,6 +11,7 @@
 			"first": "Thomas",
 			"last": "Deinhamer"
 		},
+		"username": "Thasmo",
 		"location": {
 			"place": "Salzburg",
 			"position": "47.8;13.033333",
@@ -20,7 +21,7 @@
 		"avatar": "//gravatar.com/avatar/39263d15a3b0838a938aaaa59dde5c06"
 	},
 	"employer": {
-		"name": "pixelart GmbH",
+		"name": "pixelart",
 		"address": "http://www.pixelart.at/",
 		"avatar": "//gravatar.com/avatar/573dc407c63009618cbc693f21c23428"
 	},
