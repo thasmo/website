@@ -81,7 +81,8 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/pr
 
 		div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			figure.profile__figure
-				img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+				a.profile__link(href='#✓')
+					img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 				a.profile__employer(href=content.employer.address)
 					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
 

@@ -4,6 +4,7 @@
 	display: block;
 	position: fixed;
 	bottom: 0;
+	right: 0;
 	z-index: 1;
 
 	width: 100%;
@@ -96,7 +97,12 @@
 }
 
 .page:target .bar {
+	width: 20%;
+	background: none;
+
 	&__button {
+		width: 100%;
+
 		&--on {
 			display: none;
 		}
@@ -106,8 +112,16 @@
 		}
 	}
 
+	&__social {
+		display: none;
+	}
+
 	@media(min-width: 480px) {
+		width: auto;
+		background: color(blank);
+
 		&__social {
+			display: block;
 			opacity: 0;
 			transform: translateX(100%);
 		}
