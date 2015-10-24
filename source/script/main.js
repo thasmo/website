@@ -1,3 +1,4 @@
 // main.js
 
-// = include ../../bower_components/loadcss/loadCSS.js
+// = include ../../bower_components/trianglify/dist/trianglify.min.js
+// = include component/background.js

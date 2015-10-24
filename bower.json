@@ -4,6 +4,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "sanitize-css": "~3.0",
-    "loadcss": "~0.2"
+    "loadcss": "~0.2",
+    "trianglify": "~0.3"
   }
 }
