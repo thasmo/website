@@ -9,6 +9,8 @@
 		color: #999;
 		background: #323232;
 	}
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -64,6 +66,10 @@ img {
 a {
 	color: color(base);
 	text-decoration: none;
+
+	&:active {
+		background: transparent;
+	}
 
 	&:hover {
 		color: color(accent);
