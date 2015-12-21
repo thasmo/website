@@ -57,7 +57,7 @@
 			"type": "email",
 			"icon": "envelope-o",
 			"label": "Write me an email.",
-			"address": "mailto:thasmo@gmail.com",
+			"address": "mailto:hi@thasmo.com",
 			"primary": false
 		}, {
 			"type": "skype",
