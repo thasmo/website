@@ -5,6 +5,6 @@
   "dependencies": {
     "sanitize-css": "~3.0",
     "loadcss": "~0.2",
-    "trianglify": "~0.3"
+    "trianglify": "~0.4"
   }
 }
