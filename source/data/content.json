@@ -31,6 +31,10 @@
 			"description": "Yeoman generator that scaffolds out a project for crafting email templates.",
 			"address": "https://www.npmjs.com/package/@thasmo/generator-email"
 		}, {
+			"name": "Gulp Juice Plugin",
+			"description": "Gulp plugin to inline CSS in HTML files using Automattic's Juice.",
+			"address": "https://www.npmjs.com/package/@thasmo/gulp-juice"
+		}, {
 			"name": "Vagrant Box for PHP Development",
 			"description": "A custom Vagrant Box for PHP Web Development.",
 			"address": "https://github.com/thasmo/vagrant.box"
