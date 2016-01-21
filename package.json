@@ -11,9 +11,9 @@
     "gulp": "~3.9",
     "gulp-util": "~3.0",
     "gulp-plumber": "~1.0",
-    "gulp-load-plugins": "~1.1",
+    "gulp-load-plugins": "~1.2",
     "gulp-sass": "~2.1",
-    "gulp-cssnano": "~2.0",
+    "gulp-cssnano": "~2.1",
     "gulp-notify": "~2.2",
     "gulp-jade": "~1.1",
     "gulp-sourcemaps": "~1.6",
@@ -27,7 +27,7 @@
     "gulp-include": "~2.1",
     "gulp-jsvalidate": "~2.1",
     "gulp-inline-source": "~2.1",
-    "browser-sync": "~2.10",
+    "browser-sync": "~2.11",
     "require-dir": "~0.3",
     "run-sequence": "~1.1"
   }
