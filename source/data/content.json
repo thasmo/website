@@ -54,6 +54,10 @@
 			"name": "Packer Templates",
 			"description": "Various packer templates for building basic virtual machine images.",
 			"address": "https://github.com/thasmo/packer.templates"
+		}, {
+			"name": "DST:A Dedicated Server",
+			"description": "Docker image for running a dedicated server for the online survival game Don't Starve Together.",
+			"address": "https://github.com/dst-academy/server"
 		}
 	],
 	"channels": [
