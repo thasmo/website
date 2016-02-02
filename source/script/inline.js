@@ -1,3 +1,3 @@
 // inline.js
 
-// = include ../../bower_components/loadcss/loadCSS.js
+// = include ../../bower_components/loadcss/src/loadCSS.js

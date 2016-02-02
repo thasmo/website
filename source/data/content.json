@@ -47,6 +47,10 @@
 			"description": "Personal Gulp boilerplate for basic frontend web projects.",
 			"address": "https://github.com/thasmo/gulp.boilerplate"
 		}, {
+			"name": "gridable",
+			"description": "Responsive layout-grid using flexible-box.",
+			"address": "https://github.com/gridable/gridable"
+		}, {
 			"name": "Portable Cygwin",
 			"description": "Portable version of Cygwin, a collection of tools which provide a Linux look and feel environment for Windows.",
 			"address": "https://github.com/thasmo/portableapps.cygwin"

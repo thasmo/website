@@ -3,8 +3,8 @@
   "description": "Personal website.",
   "license": "CC0-1.0",
   "dependencies": {
-    "sanitize-css": "~3.0",
-    "loadcss": "~0.2",
+    "sanitize-css": "~3.1",
+    "loadcss": "~1.0",
     "trianglify": "~0.4"
   }
 }
