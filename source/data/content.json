@@ -88,6 +88,12 @@
 			"address": "https://twitter.com/thomasdeinhamer",
 			"primary": true
 		}, {
+			"type": "stack-overflow",
+			"icon": "stack-overflow",
+			"label": "Visit me on Stack Overflow.",
+			"address": "https://stackoverflow.com/users/455988/thasmo",
+			"primary": true
+		}, {
 			"type": "github",
 			"icon": "github",
 			"label": "Visit me on GitHub.",
