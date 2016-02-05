@@ -51,6 +51,10 @@
 			"description": "Responsive layout-grid using flexible-box.",
 			"address": "https://github.com/gridable/gridable"
 		}, {
+			"name": "gaoo.js",
+			"description": "Simple Google Analytics opt-out helper.",
+			"address": "https://github.com/thasmo/gaoo.js"
+		}, {
 			"name": "Portable Cygwin",
 			"description": "Portable version of Cygwin, a collection of tools which provide a Linux look and feel environment for Windows.",
 			"address": "https://github.com/thasmo/portableapps.cygwin"
