@@ -31,6 +31,10 @@
 			"description": "Yeoman generator that scaffolds out a project for crafting email templates.",
 			"address": "https://www.npmjs.com/package/@thasmo/generator-email"
 		}, {
+			"name": "Gulp Modernizr Plugin",
+			"description": "Gulp plugin to generate a custom Modernizr build.",
+			"address": "https://www.npmjs.com/package/@thasmo/gulp-modernizr"
+		}, {
 			"name": "Gulp Juice Plugin",
 			"description": "Gulp plugin to inline CSS in HTML files using Automattic's Juice.",
 			"address": "https://www.npmjs.com/package/@thasmo/gulp-juice"
