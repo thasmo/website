@@ -1,5 +1,5 @@
 doctype html
-html.no-js(lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#')
+html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#')
 	head
 		meta(charset='utf-8')
 		title=content.website.title
@@ -50,7 +50,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/pr
 		script(src='//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js')
 		<![endif]-->
 
-	body.page(id='✓')
+	body.page
 		main.panel
 			section.panel__content
 				header.section
@@ -84,7 +84,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/pr
 
 		div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 			figure.profile__figure
-				a.profile__link(href='#✓')
+				a.profile__link(href='#📎')
 					img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 				a.profile__employer(href=content.employer.address)
 					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
@@ -101,7 +101,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/pr
 						a.network(class='network--' + channel.type, href=channel.address, rel='me')
 							i.fa(class='fa-' + channel.icon)
 
-			a.bar__button.bar__button--on(href='#✓')
+			a.bar__button.bar__button--on(href='#📎')
 				i.fa.fa-circle-o
 
 			a.bar__button.bar__button--off(href='#')

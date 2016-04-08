@@ -78,7 +78,7 @@
 	}
 }
 
-.page:target .profile {
+:root:target .profile {
 	@media(max-width: 480px) {
 		&__link,
 		&__photo {
