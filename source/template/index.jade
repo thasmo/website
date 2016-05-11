@@ -7,31 +7,12 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		title=content.website.title
 
 		meta(name='description', content=content.website.description)
-		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+		meta(name='viewport', content='width=device-width, minimum-scale=1, initial-scale=1')
 
-		meta(property='og:title', content=content.website.title)
-		meta(property='og:description', content=content.website.description)
-		meta(property='og:url', content=content.self.address)
-		meta(property='og:image', content='https:' + content.self.avatar + '?s=512')
-		meta(property='og:type', content='profile')
-		meta(property='profile:first_name', content=content.self.name.first)
-		meta(property='profile:last_name', content=content.self.name.last)
-		meta(property='profile:username', content=content.self.username)
-
-		meta(name='twitter:title', content=content.website.title)
-		meta(name='twitter:description', content=content.website.description)
-		meta(name='twitter:url', content=content.self.address)
-		meta(name='twitter:image', content='https:' + content.self.avatar + '?s=512')
-		meta(name='twitter:card', content='summary')
-		meta(name='twitter:site', content='@thomasdeinhamer')
-
-		meta(name='geo.position', content=content.self.location.position)
-		meta(name='geo.placename', content=content.self.location.place)
-		meta(name='geo.region', content=content.self.location.country)
-
-		meta(property='fb:admins', content='1351449068')
-
-		link(rel='canonical', href=content.self.address)
+		include partial/meta.opengraph.jade
+		include partial/meta.twitter.jade
+		include partial/meta.facebook.jade
+		include partial/meta.geo.jade
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
 
