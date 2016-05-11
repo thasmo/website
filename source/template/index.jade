@@ -1,3 +1,5 @@
+include function/icon.jade
+
 doctype html
 html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#')
 	head
@@ -5,44 +7,22 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		title=content.website.title
 
 		meta(name='description', content=content.website.description)
-		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+		meta(name='viewport', content='width=device-width, minimum-scale=1, initial-scale=1')
 
-		meta(property='og:title', content=content.website.title)
-		meta(property='og:description', content=content.website.description)
-		meta(property='og:url', content=content.self.address)
-		meta(property='og:image', content='https:' + content.self.avatar + '?s=512')
-		meta(property='og:type', content='profile')
-		meta(property='profile:first_name', content=content.self.name.first)
-		meta(property='profile:last_name', content=content.self.name.last)
-		meta(property='profile:username', content=content.self.username)
-
-		meta(name='twitter:title', content=content.website.title)
-		meta(name='twitter:description', content=content.website.description)
-		meta(name='twitter:url', content=content.self.address)
-		meta(name='twitter:image', content='https:' + content.self.avatar + '?s=512')
-		meta(name='twitter:card', content='summary')
-		meta(name='twitter:site', content='@thomasdeinhamer')
-
-		meta(name='geo.position', content=content.self.location.position)
-		meta(name='geo.placename', content=content.self.location.place)
-		meta(name='geo.region', content=content.self.location.country)
-
-		meta(property='fb:admins', content='1351449068')
-
-		link(rel='canonical', href=content.self.address)
+		include partial/meta.opengraph.jade
+		include partial/meta.twitter.jade
+		include partial/meta.facebook.jade
+		include partial/meta.geo.jade
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
 
 		noscript
 			link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
-			link(rel='stylesheet', href='//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css')
 
 		script(src='/static/script/inline.js', data-inline)
 
 		script.
-			'use strict';
 			window.loadCSS('//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400');
-			window.loadCSS('//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css');
 
 		script(src='/static/script/main.js', async)
 
@@ -79,7 +59,7 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 						each channel in content.channels
 							p
 								a.contact(href=channel.address)
-									i.fa.fa-fw(class='fa-' + channel.icon)
+									+icon(channel.icon)
 									| #{channel.label}
 
 		div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
@@ -90,6 +70,7 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
 
 			p.profile__quote
+				+icon('code')
 				| Curious all day,
 				br
 				| awake at night.
@@ -99,13 +80,13 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 				each channel in content.channels
 					if channel.primary
 						a.network(class='network--' + channel.type, href=channel.address, rel='me')
-							i.fa(class='fa-' + channel.icon)
+							+icon(channel.icon)
 
 			a.bar__button.bar__button--on(href='#📎')
-				i.fa.fa-circle-o
+				+icon('circle-o')
 
 			a.bar__button.bar__button--off(href='#')
-				i.fa.fa-dot-circle-o
+				+icon('dot-circle-o')
 
 		noscript
 			iframe(src='//www.googletagmanager.com/ns.html?id=' + content.website.tracking.key, style='display:none;')

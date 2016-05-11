@@ -3,7 +3,14 @@
 .contact {
 	font-size: 18px;
 
-	.fa {
-		margin-right: 8px;
+	svg {
+		position: relative;
+		top: -2px;
+
+		display: inline-block;
+		max-width: 18px;
+		margin-right: 5px;
+
+		vertical-align: middle;
 	}
 }

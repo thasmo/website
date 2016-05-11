@@ -13,7 +13,10 @@
 	background: color(blank);
 
 	&__button {
-		display: block;
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+
 		float: right;
 		height: 50px;
 		width: 20%;
@@ -23,18 +26,9 @@
 
 		transition: color 250ms;
 
-		.fa {
-			vertical-align: middle;
-			background: none;
-		}
-
-		&::before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			width: 0;
-
-			vertical-align: middle;
+		svg {
+			width: 100%;
+			max-width: 20px;
 		}
 
 		&--on {
@@ -109,7 +103,7 @@
 		}
 
 		&--off {
-			display: block;
+			display: flex;
 		}
 	}
 
