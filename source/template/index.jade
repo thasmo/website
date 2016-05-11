@@ -1,3 +1,5 @@
+include function/icon.jade
+
 doctype html
 html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#')
 	head
@@ -35,14 +37,12 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 
 		noscript
 			link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
-			link(rel='stylesheet', href='//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css')
 
 		script(src='/static/script/inline.js', data-inline)
 
 		script.
 			'use strict';
 			window.loadCSS('//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400');
-			window.loadCSS('//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css');
 
 		script(src='/static/script/main.js', async)
 
@@ -79,7 +79,7 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 						each channel in content.channels
 							p
 								a.contact(href=channel.address)
-									i.fa.fa-fw(class='fa-' + channel.icon)
+									+icon(channel.icon)
 									| #{channel.label}
 
 		div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
@@ -90,6 +90,7 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 					img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
 
 			p.profile__quote
+				+icon('code')
 				| Curious all day,
 				br
 				| awake at night.
@@ -99,13 +100,13 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 				each channel in content.channels
 					if channel.primary
 						a.network(class='network--' + channel.type, href=channel.address, rel='me')
-							i.fa(class='fa-' + channel.icon)
+							+icon(channel.icon)
 
 			a.bar__button.bar__button--on(href='#📎')
-				i.fa.fa-circle-o
+				+icon('circle-o')
 
 			a.bar__button.bar__button--off(href='#')
-				i.fa.fa-dot-circle-o
+				+icon('dot-circle-o')
 
 		noscript
 			iframe(src='//www.googletagmanager.com/ns.html?id=' + content.website.tracking.key, style='display:none;')

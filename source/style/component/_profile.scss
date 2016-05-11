@@ -65,11 +65,11 @@
 
 		transition: opacity 250ms;
 
-		&::before {
-			content: '\f121';
-			margin-right: 5px;
+		svg {
+			display: inline-block;
+			vertical-align: baseline;
+			max-width: 24px;
 			color: color(accent);
-			font-family: 'FontAwesome', fantasy;
 		}
 	}
 

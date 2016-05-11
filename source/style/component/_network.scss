@@ -5,7 +5,6 @@
 
 	display: flex;
 	flex-grow: 1;
-	align-items: center;
 	justify-content: center;
 	height: 50px;
 
@@ -15,13 +14,14 @@
 
 	transition: color 250ms, opacity 250ms, background 250ms;
 
+	svg {
+		width: 100%;
+		max-width: 26px;
+	}
+
 	&:hover {
 		color: color(blank);
 		opacity: 1 !important;
-	}
-
-	.fa {
-		background: none;
 	}
 }
 
