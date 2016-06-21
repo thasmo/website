@@ -15,20 +15,11 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		include partial/meta.geo.jade
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
-
-		noscript
-			link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
+		link(rel='preload', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.rel='stylesheet'")
+		noscript: link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
 
 		script(src='/static/script/inline.js', data-inline)
-
-		script.
-			window.loadCSS('//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400');
-
 		script(src='/static/script/main.js', async)
-
-		<!--[if lte IE 9]>
-		script(src='//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js')
-		<![endif]-->
 
 	body.page
 		main.panel
