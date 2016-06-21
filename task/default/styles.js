@@ -15,6 +15,7 @@ gulp.task('styles:common', function() {
 	return gulp.src(path.source.style + '*.scss')
 		.pipe($.plumber(helper.error))
 		.pipe($.sourcemaps.init())
+		.pipe($.include())
 		.pipe($.sass())
 		.pipe($.autoprefixer())
 		.pipe($.if($.util.env.production, $.cssnano()))
