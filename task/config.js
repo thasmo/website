@@ -22,6 +22,10 @@ module.exports = {
 			collapseWhitespace: true
 		},
 
+		cssnano: {
+			autoprefixer: false
+		},
+
 		inlinesource: {
 			attribute: 'data-inline'
 		},
