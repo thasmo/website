@@ -1,4 +1,4 @@
-include function/icon.jade
+include /function/icon
 
 doctype html
 html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#')
@@ -9,10 +9,10 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		meta(name='description', content=content.website.description)
 		meta(name='viewport', content='width=device-width, minimum-scale=1, initial-scale=1')
 
-		include partial/meta.opengraph.jade
-		include partial/meta.twitter.jade
-		include partial/meta.facebook.jade
-		include partial/meta.geo.jade
+		include /partial/meta/opengraph
+		include /partial/meta/twitter
+		include /partial/meta/facebook
+		include /partial/meta/geo
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
 		link(rel='preload', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.rel='stylesheet'")

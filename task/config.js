@@ -10,8 +10,9 @@ module.exports = {
 	},
 
 	plugin: {
-		jade: {
-			pretty: '\t'
+		pug: {
+			pretty: '\t',
+			basedir: path.source.template
 		},
 
 		htmlmin: {
