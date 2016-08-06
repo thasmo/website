@@ -2,9 +2,10 @@
   "name": "thasmo.com",
   "description": "Personal website.",
   "license": "CC0-1.0",
+  "private": true,
   "dependencies": {
-    "sanitize-css": "~4.0",
+    "sanitize-css": "~4.1",
     "loadcss": "~1.2",
-    "trianglify": "~0.4"
+    "trianglify": "~1.0"
   }
 }
