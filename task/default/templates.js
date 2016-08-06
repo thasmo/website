@@ -19,10 +19,10 @@ gulp.task('templates:common', function() {
 		}
 	};
 
-	return gulp.src(path.source.template + '*.jade')
+	return gulp.src(path.source.template + '*.pug')
 		.pipe($.plumber(helper.error))
 		.pipe($.data(data))
-		.pipe($.jade(config.plugin.jade))
+		.pipe($.pug(config.plugin.pug))
 		.pipe($.if($.util.env.production, $.htmlmin(config.plugin.htmlmin)))
 		.pipe(gulp.dest(path.public.template))
 		.pipe($.duration(name))

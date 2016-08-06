@@ -10,8 +10,9 @@ module.exports = {
 	},
 
 	plugin: {
-		jade: {
-			pretty: '\t'
+		pug: {
+			pretty: '\t',
+			basedir: path.source.template
 		},
 
 		htmlmin: {
@@ -19,6 +20,10 @@ module.exports = {
 			removeCommentsFromCDATA: true,
 			removeCDATASectionsFromCDATA: true,
 			collapseWhitespace: true
+		},
+
+		cssnano: {
+			autoprefixer: false
 		},
 
 		inlinesource: {

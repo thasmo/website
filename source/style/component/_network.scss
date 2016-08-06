@@ -19,9 +19,9 @@
 		max-width: 26px;
 	}
 
-	&:hover {
+	&.network:hover {
 		color: color(blank);
-		opacity: 1 !important;
+		opacity: 1;
 	}
 }
 
