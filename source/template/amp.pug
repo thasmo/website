@@ -33,7 +33,7 @@ html.no-js(id='📎', lang='en', ⚡)
 							b Web-Developer from Salzburg, Austria,
 							wbr
 							| pushing the web's boundaries at &#32;
-							a(href=content.employer.address)=content.employer.name
+							a(href=content.employer.address, rel='noopener')=content.employer.name
 							| .
 
 					section.section
@@ -43,7 +43,7 @@ html.no-js(id='📎', lang='en', ⚡)
 							each project in content.projects
 								article.project
 									h3.project__title
-										a(href=project.address)=project.name
+										a(href=project.address, rel='noopener')=project.name
 									p.project__description=project.description
 
 					section.section
@@ -52,7 +52,7 @@ html.no-js(id='📎', lang='en', ⚡)
 						div.section__content
 							each channel in content.channels
 								p
-									a.contact(href=channel.address)
+									a.contact(href=channel.address, rel='noopener')
 										+icon(channel.icon)
 										| #{channel.label}
 
@@ -68,7 +68,7 @@ html.no-js(id='📎', lang='en', ⚡)
 							height='256',
 							layout='responsive'
 						)
-					a.profile__employer(href=content.employer.address)
+					a.profile__employer(href=content.employer.address, rel='noopener')
 						amp-img(
 							src=content.employer.avatar + '?s=256',
 							srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x',
@@ -88,7 +88,7 @@ html.no-js(id='📎', lang='en', ⚡)
 				p.bar__social
 					each channel in content.channels
 						if channel.primary
-							a.network(class='network--' + channel.type, href=channel.address, rel='me')
+							a.network(class='network--' + channel.type, href=channel.address, rel='me noopener')
 								+icon(channel.icon)
 
 				a.bar__button.bar__button--on(href='#📎')
