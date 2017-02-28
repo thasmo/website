@@ -56,7 +56,7 @@ Options -MultiViews
 
 	# Manifest files
 	AddType application/manifest+json                   webmanifest
-	AddType application/x-web-app-manifest+json         webapp
+	AddType application/manifest+json                   webapp
 	AddType text/cache-manifest                         appcache
 
 	# Media files
