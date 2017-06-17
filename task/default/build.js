@@ -3,6 +3,6 @@
 var gulp = require('gulp'),
     sequence = require('run-sequence');
 
-gulp.task('build', ['setup'], function(callback) {
+gulp.task('build', function(callback) {
 	return sequence(['common', 'templates', 'styles', 'scripts'], callback);
 });

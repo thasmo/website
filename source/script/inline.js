@@ -1,4 +1,4 @@
 // inline.js
 
-// = include ../../bower_components/loadcss/src/loadCSS.js
-// = include ../../bower_components/loadcss/src/cssrelpreload.js
+// = include ../../node_modules/fg-loadcss/src/loadCSS.js
+// = include ../../node_modules/fg-loadcss/src/cssrelpreload.js
