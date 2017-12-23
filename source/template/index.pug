@@ -63,9 +63,9 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 			div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 				figure.profile__figure
 					a.profile__link(href='#📎')
-						img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+						img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', width=256, height=256, alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 					a.profile__employer(href=content.employer.address, rel='noopener')
-						img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
+						img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', width=256, height=256, alt='Logo of ' + content.employer.name)
 
 				p.profile__quote
 					+icon('code')
