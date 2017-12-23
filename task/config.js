@@ -1,5 +1,6 @@
 // config.js
 
+var http2 = require('http2');
 var path = require('./path');
 
 module.exports = {
@@ -36,10 +37,8 @@ module.exports = {
 			},
 			reloadDebounce: 250,
 			online: true,
-			https: {
-				key: 'localhost.key.pem',
-				cert: 'localhost.cert.pem'
-			}
+			https: true,
+			httpModule: http2
 		}
 	}
 };
