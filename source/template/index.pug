@@ -77,13 +77,13 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 				p.bar__social
 					each channel in content.channels
 						if channel.primary
-							a.network(class='network--' + channel.type, href=channel.address, rel='me noopener')
+							a.network(class='network--' + channel.type, href=channel.address, title=channel.title, rel='me noopener')
 								+icon(channel.icon)
 
-				a.bar__button.bar__button--on(href='#📎')
+				a.bar__button.bar__button--on(href='#📎', title='more information')
 					+icon('circle-o')
 
-				a.bar__button.bar__button--off(href='#')
+				a.bar__button.bar__button--off(href='#', title='less information')
 					+icon('dot-circle-o')
 
 			noscript
