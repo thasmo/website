@@ -14,11 +14,11 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.3.1",
     "gulp-duration": "0.0.0",
-    "gulp-htmlmin": "^3.0.0",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-if": "^2.0.2",
     "gulp-include": "^2.3.1",
     "gulp-inline-source": "^3.1.0",
-    "gulp-jsvalidate": "^3.0.0",
+    "gulp-jsvalidate": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
@@ -28,7 +28,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "require-dir": "^0.3.2",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "fg-loadcss": "^2.0.1",
