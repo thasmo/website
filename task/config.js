@@ -36,10 +36,7 @@ module.exports = {
 			},
 			reloadDebounce: 250,
 			online: true,
-			https: {
-				key: 'localhost.key.pem',
-				cert: 'localhost.cert.pem'
-			}
+			https: true
 		}
 	}
 };

@@ -1,5 +1,4 @@
-// main.js
+// inline.js
 
-// = include ../../node_modules/trianglify/dist/trianglify.min.js
-// = include component/background.js
+// = include ../../node_modules/fg-loadcss/dist/cssrelpreload.js
 // = include component/worker.js

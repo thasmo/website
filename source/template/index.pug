@@ -12,7 +12,6 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		meta(name='theme-color', content='#fafafa')
 
 		link(rel='canonical', href=content.self.address)
-		link(rel='amphtml', href='/amp.html')
 		link(rel='manifest', href='/manifest.webapp')
 
 		include /partial/meta/opengraph
@@ -21,11 +20,10 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		include /partial/meta/geo
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
-		link(rel='preload', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.rel='stylesheet'")
+		link(rel='preload', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.onload=null;this.rel='stylesheet';")
 		noscript: link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
 
-		script(src='/static/script/inline.js', data-inline)
-		script(src='/static/script/main.js', async)
+		script(src='/static/script/main.js', data-inline)
 
 	body.page
 		div.page__stage
@@ -63,9 +61,9 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 			div.profile(itemscope='itemscope', itemtype='http://schema.org/Person')
 				figure.profile__figure
 					a.profile__link(href='#📎')
-						img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
+						img.profile__photo(itemprop='image', src=content.self.avatar + '?s=256', srcset=content.self.avatar + '?s=256 1x,' + content.self.avatar + '?s=512 2x', width=256, height=256, alt='Photo of ' + content.self.name.first + ' ' + content.self.name.last)
 					a.profile__employer(href=content.employer.address, rel='noopener')
-						img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', alt='Logo of ' + content.employer.name)
+						img(src=content.employer.avatar + '?s=256', srcset=content.employer.avatar + '?s=256 1x,' + content.employer.avatar + '?s=512 2x', width=256, height=256, alt='Logo of ' + content.employer.name)
 
 				p.profile__quote
 					+icon('code')
@@ -77,13 +75,13 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 				p.bar__social
 					each channel in content.channels
 						if channel.primary
-							a.network(class='network--' + channel.type, href=channel.address, rel='me noopener')
+							a.network(class='network--' + channel.type, href=channel.address, title=channel.title, rel='me noopener')
 								+icon(channel.icon)
 
-				a.bar__button.bar__button--on(href='#📎')
+				a.bar__button.bar__button--on(href='#📎', title='more information')
 					+icon('circle-o')
 
-				a.bar__button.bar__button--off(href='#')
+				a.bar__button.bar__button--off(href='#', title='less information')
 					+icon('dot-circle-o')
 
 			noscript

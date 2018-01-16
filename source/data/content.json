@@ -76,36 +76,42 @@
 		{
 			"type": "email",
 			"icon": "envelope-o",
+			"title": "Email",
 			"label": "Write me an email.",
 			"address": "mailto:hi@thasmo.com",
 			"primary": false
 		}, {
 			"type": "twitter",
 			"icon": "twitter",
+			"title": "Twitter",
 			"label": "Follow me on Twitter.",
 			"address": "https://twitter.com/thomasdeinhamer",
 			"primary": true
 		}, {
 			"type": "stack-overflow",
 			"icon": "stack-overflow",
+			"title": "Stack Overflow",
 			"label": "Visit me on Stack Overflow.",
 			"address": "https://stackoverflow.com/users/455988/thasmo",
 			"primary": true
 		}, {
 			"type": "github",
 			"icon": "github",
+			"title": "GitHub",
 			"label": "Visit me on GitHub.",
 			"address": "https://github.com/thasmo",
 			"primary": true
 		}, {
 			"type": "xing",
 			"icon": "xing",
+			"title": "Xing",
 			"label": "Add me on Xing.",
 			"address": "https://www.xing.com/profile/Thomas_Deinhamer",
 			"primary": true
 		}, {
 			"type": "linkedin",
 			"icon": "linkedin",
+			"title": "Linked In",
 			"label": "Add me on LinkedIn.",
 			"address": "https://linkedin.com/in/thasmo",
 			"primary": true
