@@ -1,6 +1,5 @@
 // config.js
 
-var http2 = require('http2');
 var path = require('./path');
 
 module.exports = {
@@ -37,8 +36,7 @@ module.exports = {
 			},
 			reloadDebounce: 250,
 			online: true,
-			https: true,
-			httpModule: http2
+			https: true
 		}
 	}
 };
