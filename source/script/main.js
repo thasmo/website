@@ -1,5 +1,4 @@
 // inline.js
 
-// = include ../../node_modules/fg-loadcss/src/loadCSS.js
-// = include ../../node_modules/fg-loadcss/src/cssrelpreload.js
+// = include ../../node_modules/fg-loadcss/dist/cssrelpreload.js
 // = include component/worker.js
