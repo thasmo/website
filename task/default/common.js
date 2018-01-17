@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('common', function() {
 	var name = 'Common';
 
-	return gulp.src(path.source.main + '*.*', {
+	return gulp.src(path.source.main + '{*.*,_redirects}', {
 		dot: true
 	})
 		.pipe($.plumber(helper.error))
