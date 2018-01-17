@@ -1,12 +1,9 @@
 {
-  "name": "thasmo.com",
+  "name": "@thasmo/website",
   "description": "Personal website.",
   "license": "CC0-1.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/thasmo/website"
-  },
+  "repository": "thasmo/website",
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
@@ -33,6 +30,5 @@
   "dependencies": {
     "fg-loadcss": "^2.0.1",
     "normalize.css": "^7.0.0"
-  },
-  "false": {}
+  }
 }
