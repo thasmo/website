@@ -1,5 +1,5 @@
 meta(property='og:title', content=content.website.title)
-meta(property='og:description', content=content.website.description)
+meta(property='og:description', content=content.website.description.replace('\n', ' '))
 meta(property='og:url', content=content.self.address)
 meta(property='og:image', content='https:' + content.self.avatar + '?s=512')
 meta(property='og:type', content='profile')
