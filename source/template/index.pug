@@ -6,13 +6,14 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		meta(charset='utf-8')
 		title=content.website.title
 
-		meta(name='description', content=content.website.description)
-		meta(name='viewport', content='width=device-width, minimum-scale=1, initial-scale=1')
+		meta(name='description', content=content.website.description.replace('\n', ' '))
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(name='mobile-web-app-capable', content='yes')
 		meta(name='theme-color', content='#fafafa')
 
 		link(rel='canonical', href=content.self.address)
-		link(rel='manifest', href='/manifest.json')
+		link(rel='manifest', href='/manifest.webmanifest')
+		link(rel='apple-touch-icon', href=content.self.avatar + '?s=180')
 
 		include /partial/meta/opengraph
 		include /partial/meta/twitter
@@ -20,14 +21,14 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 		include /partial/meta/geo
 
 		link(rel='stylesheet', href='/static/style/main.css', data-inline)
-		link(rel='preload', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.onload=null;this.rel='stylesheet';")
-		noscript: link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
+		link(rel='preload', href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400', as='style', onload="this.onload=null;this.rel='stylesheet';")
+		noscript: link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7cRoboto+Slab:300,400')
 
 		script(src='/static/script/main.js', data-inline)
 
 	body.page
 		div.page__stage
-			main.panel
+			main.panel(role='main')
 				section.panel__content
 					header.section
 						h1=content.self.name.first + ' ' + content.self.name.last
@@ -67,9 +68,7 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 
 				p.profile__quote
 					+icon('code')
-					| Curious all day,
-					br
-					| awake at night.
+					span !{content.website.description.replace('\n', '<br>')}
 
 			aside.bar
 				p.bar__social
@@ -85,12 +84,12 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 					+icon('dot-circle-o')
 
 			noscript
-				iframe(src='//www.googletagmanager.com/ns.html?id=' + content.website.tracking.key, style='display:none;')
+				iframe(src='https://www.googletagmanager.com/ns.html?id=' + content.website.tracking.key, style='display:none;')
 
 			script.
 				(function(w,d,s,l,i){
 					w[l]=w[l]||[];
 					w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
 					var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-					j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+					j.crossorigin='anonymous';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 				})(window,document,'script','dataLayer','#{content.website.tracking.key}');
