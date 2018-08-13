@@ -8,12 +8,9 @@ html.no-js(id='📎', lang='en', prefix='og: http://ogp.me/ns# profile: http://o
 
 		meta(name='description', content=content.website.description.replace('\n', ' '))
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		meta(name='mobile-web-app-capable', content='yes')
-		meta(name='theme-color', content='#fafafa')
 
 		link(rel='canonical', href=content.self.address)
 		link(rel='manifest', href='/manifest.webmanifest')
-		link(rel='apple-touch-icon', href=content.self.avatar + '?s=180')
 
 		include /partial/meta/opengraph
 		include /partial/meta/twitter

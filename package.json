@@ -5,7 +5,7 @@
   "private": true,
   "repository": "thasmo/website",
   "devDependencies": {
-    "browser-sync": "^2.23.5",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cssnano": "^2.1.2",
@@ -14,7 +14,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-if": "^2.0.2",
     "gulp-include": "^2.3.1",
-    "gulp-inline-source": "^3.1.0",
+    "gulp-inline-source": "^3.2.0",
     "gulp-jsvalidate": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.2.0",
@@ -22,13 +22,14 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.3",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "fg-loadcss": "^2.0.1",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "pwacompat": "^2.0.6"
   }
 }
