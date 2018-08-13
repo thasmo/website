@@ -17,7 +17,7 @@ gulp.task('scripts:common', function() {
 		.pipe($.sourcemaps.init())
 		.pipe($.include())
 		.pipe($.jsvalidate())
-		.pipe($.if($.util.env.production, $.uglify()))
+		.pipe($.if($.util.env.production, $.uglifyEs.default()))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest(path.public.script))
 		.pipe($.duration(name))
