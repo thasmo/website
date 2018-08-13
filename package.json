@@ -28,7 +28,6 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "fg-loadcss": "^2.0.1",
     "normalize.css": "^7.0.0",
     "pwacompat": "^2.0.6"
   }
