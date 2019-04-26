@@ -1,5 +1,9 @@
 {
   "private": true,
+  "engines": {
+    "node": "^10.15.0",
+    "npm": "^6.9.0"
+  },
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
