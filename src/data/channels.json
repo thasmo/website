@@ -1,0 +1,44 @@
+[
+	{
+		"type": "email",
+		"title": "Email",
+		"label": "Write me an email.",
+		"address": "mailto:hi@thasmo.com",
+		"primary": false
+	},
+	{
+		"type": "twitter",
+		"title": "Twitter",
+		"label": "Follow me on Twitter.",
+		"address": "https://twitter.com/thomasdeinhamer",
+		"primary": true
+	},
+	{
+		"type": "stackoverflow",
+		"title": "Stack Overflow",
+		"label": "Visit me on Stack Overflow.",
+		"address": "https://stackoverflow.com/users/455988/thasmo",
+		"primary": true
+	},
+	{
+		"type": "github",
+		"title": "GitHub",
+		"label": "Visit me on GitHub.",
+		"address": "https://github.com/thasmo",
+		"primary": true
+	},
+	{
+		"type": "xing",
+		"title": "Xing",
+		"label": "Add me on Xing.",
+		"address": "https://www.xing.com/profile/Thomas_Deinhamer",
+		"primary": true
+	},
+	{
+		"type": "linkedin",
+		"title": "Linked In",
+		"label": "Add me on LinkedIn.",
+		"address": "https://linkedin.com/in/thasmo",
+		"primary": true
+	}
+]

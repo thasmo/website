@@ -1,0 +1,57 @@
+[
+	{
+		"name": "Yeoman Email Generator",
+		"description": "Yeoman generator that scaffolds out a project for crafting email templates.",
+		"address": "https://www.npmjs.com/package/@thasmo/generator-email"
+	},
+	{
+		"name": "Gulp Modernizr Plugin",
+		"description": "Gulp plugin to generate a custom Modernizr build.",
+		"address": "https://www.npmjs.com/package/@thasmo/gulp-modernizr"
+	},
+	{
+		"name": "Gulp Juice Plugin",
+		"description": "Gulp plugin to inline CSS in HTML files using Automattic's Juice.",
+		"address": "https://www.npmjs.com/package/@thasmo/gulp-juice"
+	},
+	{
+		"name": "Vagrant Box for PHP Development",
+		"description": "A custom Vagrant Box for PHP Web Development.",
+		"address": "https://github.com/thasmo/vagrant.box"
+	},
+	{
+		"name": "Project Honeypot Http:BL Library",
+		"description": "A simple PHP library for querying the Project Honeypot Http:BL API.",
+		"address": "https://packagist.org/packages/thasmo/honeypot-blacklist"
+	},
+	{
+		"name": "Website Boilerplate",
+		"description": "Personal Gulp boilerplate for basic frontend web projects.",
+		"address": "https://github.com/thasmo/gulp.boilerplate"
+	},
+	{
+		"name": "gridable",
+		"description": "Responsive layout-grid using flexible-box.",
+		"address": "https://github.com/gridable/gridable"
+	},
+	{
+		"name": "gaoo.js",
+		"description": "Simple Google Analytics opt-out helper.",
+		"address": "https://github.com/thasmo/gaoo.js"
+	},
+	{
+		"name": "Portable Cygwin",
+		"description": "Portable version of Cygwin, a collection of tools which provide a Linux look and feel environment for Windows.",
+		"address": "https://github.com/thasmo/portableapps.cygwin"
+	},
+	{
+		"name": "Packer Templates",
+		"description": "Various packer templates for building basic virtual machine images.",
+		"address": "https://github.com/thasmo/packer.templates"
+	},
+	{
+		"name": "DST:A Dedicated Server",
+		"description": "Docker image for running a dedicated server for the online survival game Don't Starve Together.",
+		"address": "https://github.com/dst-academy/server"
+	}
+]
