@@ -1,34 +1,19 @@
 {
-  "name": "@thasmo/website",
-  "description": "Personal website.",
-  "license": "CC0-1.0",
   "private": true,
-  "repository": "thasmo/website",
-  "devDependencies": {
-    "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-data": "^1.3.1",
-    "gulp-duration": "0.0.0",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-if": "^2.0.2",
-    "gulp-include": "^2.3.1",
-    "gulp-inline-source": "^3.2.0",
-    "gulp-jsvalidate": "^4.0.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.3",
-    "gulp-uglify-es": "^1.0.4",
-    "gulp-util": "^3.0.8",
-    "require-dir": "^1.0.0",
-    "run-sequence": "^2.2.1"
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0",
-    "pwacompat": "^2.0.6"
+    "gridsome": "^0.5.8",
+    "normalize.css": "^8.0.1",
+    "pwacompat": "^2.0.8",
+    "vue-svg-loader": "^0.12.0"
+  },
+  "devDependencies": {
+    "@gridsome/source-filesystem": "^0.3.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   }
 }

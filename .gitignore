@@ -1,6 +1,7 @@
-# Project
-/public/**
-!/public/.gitkeep
-
-# Development
+/src/.temp/
 /node_modules/
+/dist/
+/.cache/
+.env
+.env.*
+*.log
