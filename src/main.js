@@ -15,6 +15,13 @@ export default (Vue, {
 	});
 
 	head.link.push({
+		rel: 'preload',
+		href: resources.fonts,
+		as: 'style',
+		crossorigin: 'anonymous',
+	});
+
+	head.link.push({
 		rel: 'stylesheet',
 		href: resources.fonts,
 	});
