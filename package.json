@@ -10,14 +10,14 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.5.8",
+    "gridsome": "^0.6.1",
     "normalize.css": "^8.0.1",
     "pwacompat": "^2.0.8",
     "vue-svg-loader": "^0.12.0"
   },
   "devDependencies": {
-    "@gridsome/source-filesystem": "^0.3.0",
-    "node-sass": "^4.11.0",
+    "@gridsome/source-filesystem": "^0.4.1",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0"
   }
 }
