@@ -49,7 +49,7 @@
 		width: 256px;
 		max-width: 99%;
 
-		background: none;
+		background-color: transparent;
 		vertical-align: middle;
 		transition: opacity 250ms, filter 250ms, transform 250ms;
 
@@ -85,7 +85,7 @@
 
 			border: 1px solid $color-blank;
 			border-radius: 2px;
-			background: $color-blank;
+			background-color: $color-blank;
 
 			transition: opacity 250ms;
 		}
