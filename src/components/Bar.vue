@@ -73,7 +73,7 @@
 		width: 100%;
 		margin: 0;
 
-		background: $color-blank;
+		background-color: $color-blank;
 
 		&__button {
 			display: flex;
@@ -151,11 +151,25 @@
 				height: 100%;
 			}
 		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: $color-void;
+
+			&__button {
+				&--on {
+					color: $color-blank;
+				}
+
+				&--off {
+					color: $color-accent;
+				}
+			}
+		}
 	}
 
 	.has-navigation .bar {
 		width: 20%;
-		background: none;
+		background-color: transparent;
 
 		&__button {
 			width: 100%;
@@ -175,12 +189,16 @@
 
 		@media(min-width: 480px) {
 			width: auto;
-			background: $color-blank;
+			background-color: $color-blank;
 
 			&__social {
 				display: flex;
 				opacity: 0;
 				transform: translateX(100%);
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-color: $color-void;
 			}
 		}
 	}

@@ -49,22 +49,22 @@
 	}
 
 	.network--twitter:hover {
-		background: #55acee;
+		background-color: #55acee;
 	}
 
 	.network--github:hover {
-		background: #333;
+		background-color: #333;
 	}
 
 	.network--xing:hover {
-		background: #cfdc00;
+		background-color: #cfdc00;
 	}
 
 	.network--linkedin:hover {
-		background: #0077b5;
+		background-color: #0077b5;
 	}
 
 	.network--stackoverflow:hover {
-		background: #f48024;
+		background-color: #f48024;
 	}
 </style>

@@ -69,7 +69,7 @@
 
 		text-align: left;
 
-		background: rgba(255, 255, 255, .9);
+		background-color: transparentize($color-subtle, 0.1);
 
 		transition: visibility 250ms, opacity 250ms, transform 250ms;
 
@@ -77,6 +77,10 @@
 
 		&__content {
 			padding: 25px;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: transparentize($color-void, 0.1);
 		}
 
 		@media (min-width: 480px) {
@@ -94,6 +98,10 @@
 
 			&__content {
 				padding: 75px 125px 75px 75px;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-color: $color-void;
 			}
 		}
 	}
