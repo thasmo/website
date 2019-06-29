@@ -10,9 +10,11 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.6.2",
+    "@sentry/browser": "^5.4.3",
+    "@sentry/integrations": "^5.4.2",
+    "gridsome": "^0.6.5",
     "normalize.css": "^8.0.1",
-    "pwacompat": "^2.0.8",
+    "pwacompat": "^2.0.9",
     "vue-svg-loader": "^0.12.0"
   },
   "devDependencies": {

@@ -1,3 +1,5 @@
+import * as Sentry from '@sentry/browser';
+import * as Integrations from '@sentry/integrations';
 import './assets/style/main.scss';
 
 const resources = {
@@ -9,6 +11,14 @@ const resources = {
 export default (Vue, {
 	head,
 }) => {
+	Sentry.init({
+		dsn: 'https://63e0d3ab99474ad899aaaec764cc7962@sentry.io/1493240',
+		integrations: [new Integrations.Vue({
+			Vue,
+			attachProps: true,
+		})],
+	});
+
 	head.link.push({
 		rel: 'manifest',
 		href: resources.manifest,
