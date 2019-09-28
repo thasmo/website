@@ -46,6 +46,7 @@
 
 		<button class="bar__button bar__button--on"
 				title="more information"
+				type="button"
 				v-if="!state"
 				@click="activate">
 			<CircleIcon/>
@@ -53,6 +54,7 @@
 
 		<button class="bar__button bar__button--off"
 				title="less information"
+				type="button"
 				v-if="state"
 				@click="deactivate">
 			<DotCircleIcon/>
