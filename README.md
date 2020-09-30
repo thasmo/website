@@ -1,3 +1,3 @@
-# thasmo.com
+# Welcome to thasmo.com
 
 > Personal website.
