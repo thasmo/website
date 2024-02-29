@@ -4,41 +4,47 @@
 		"title": "Email",
 		"label": "Write me an email.",
 		"address": "mailto:hi@thasmo.com",
-		"primary": false
+		"primary": false,
+		"color": "#000"
 	},
 	{
 		"type": "twitter",
-		"title": "Twitter",
-		"label": "Follow me on Twitter.",
-		"address": "https://twitter.com/thomasdeinhamer",
-		"primary": true
+		"title": "X",
+		"label": "Follow me on X.",
+		"address": "https://x.com/thomasdeinhamer",
+		"primary": true,
+		"color": "#000"
 	},
 	{
 		"type": "stackoverflow",
 		"title": "Stack Overflow",
 		"label": "Visit me on Stack Overflow.",
 		"address": "https://stackoverflow.com/users/455988/thasmo",
-		"primary": true
+		"primary": true,
+		"color": "#f48024"
 	},
 	{
 		"type": "github",
 		"title": "GitHub",
 		"label": "Visit me on GitHub.",
 		"address": "https://github.com/thasmo",
-		"primary": true
+		"primary": true,
+		"color": "#333"
 	},
 	{
 		"type": "xing",
 		"title": "Xing",
 		"label": "Add me on Xing.",
 		"address": "https://www.xing.com/profile/Thomas_Deinhamer",
-		"primary": true
+		"primary": true,
+		"color": "#cfdc00"
 	},
 	{
 		"type": "linkedin",
 		"title": "Linked In",
 		"label": "Add me on LinkedIn.",
 		"address": "https://linkedin.com/in/thasmo",
-		"primary": true
+		"primary": true,
+		"color": "#0077b5"
 	}
 ]
