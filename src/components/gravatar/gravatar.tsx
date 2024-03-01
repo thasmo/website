@@ -1,5 +1,5 @@
 import {component$, type PropsOf, useSignal, useTask$} from '@builder.io/qwik';
-import {generatePlaceholder} from '~/components/gravatar/gravatar.utilities';
+import {generatePlaceholder, generateSource} from '~/components/gravatar/gravatar.utilities';
 
 import * as styles from './gravatar.styles';
 
@@ -9,16 +9,28 @@ export type GravatarProperties = PropsOf<'img'> & {
 };
 
 export default component$<GravatarProperties>(({ email, size, ...props}) => {
-	const source = useSignal<string>();
+	const preview = useSignal<string>();
+	const image = useSignal<string>();
 
 	useTask$(async () => {
-		source.value = await generatePlaceholder(email, size);
+		preview.value = await generatePlaceholder(email, size / 10);
+	});
+
+	useTask$(async () => {
+		image.value = await generateSource(email, size);
 	});
 
 	return (
 		<div class={styles.gravatar}>
+			<img class={styles.preview}
+				 src={`data:image/png;base64,${preview.value}`}
+				 width={size}
+				 height={size}
+				 decoding="async"
+				 {...props} />
+
 			<img class={styles.image}
-				 src={`data:image/png;base64,${source.value}`}
+				 src={image.value}
 				 width={size}
 				 height={size}
 				 decoding="async"
