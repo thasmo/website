@@ -1,0 +1,13 @@
+thasmo
+qwik
+pandacss
+gaoo
+gridable
+modernizr
+stackoverflow
+wght
+fontsource
+deinhamer
+roboto
+outdir
+sublicensable

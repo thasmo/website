@@ -1,0 +1,9 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@layer base {
+	wbr {
+		@media (min-width: 480px) {
+			display: block;
+		}
+	}
+}

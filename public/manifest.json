@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"name": "Thomas Deinhamer — Thasmo",
+	"short_name": "thasmo.com",
+	"description": "Personal website of Thomas \"Thasmo\" Deinhamer.",
+	"dir": "ltr",
+	"lang": "en-US",
+	"theme_color": "#fafafa",
+	"background_color": "#fafafa",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait-primary"
+}

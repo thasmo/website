@@ -1,9 +1,0 @@
-https://thasmo.dev/* https://thasmo.com/:splat 301!
-https://www.thasmo.dev/* https://thasmo.com/:splat 301!
-https://deinhamer.at/* https://thasmo.com/:splat 301!
-https://www.deinhamer.at/* https://thasmo.com/:splat 301!
-https://deinhamer.com/* https://thasmo.com/:splat 301!
-https://www.deinhamer.com/* https://thasmo.com/:splat 301!
-
-/* /index.html 200
-/index.html / 301
