@@ -13,13 +13,13 @@ export default component$<ProfileProperties>(({...props}) => {
 		<div class={styles.profile} {...props}>
 			<figure class={styles.figure}>
 				<span class={styles.link}>
-					<Gravatar email={profile.email} size={512} alt={`Photo of ${profile.name}`}/>
+					<Gravatar email={profile.email} size={256} alt={`Photo of ${profile.name}`}/>
 				</span>
 
 				<a class={styles.employer}
 				   href={profile.employer.website}
 				   rel="noopener">
-					<Gravatar email={profile.employer.email} size={256} alt={`Photo of ${profile.employer.name}`}/>
+					<Gravatar email={profile.employer.email} size={72} alt={`Photo of ${profile.employer.name}`}/>
 				</a>
 			</figure>
 

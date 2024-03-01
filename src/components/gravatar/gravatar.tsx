@@ -10,14 +10,16 @@ export type GravatarProperties = PropsOf<'img'> & {
 
 export default component$<GravatarProperties>(({ email, size, ...props}) => {
 	const preview = useSignal<string>();
-	const image = useSignal<string>();
+	const low = useSignal<string>();
+	const high = useSignal<string>();
 
 	useTask$(async () => {
 		preview.value = await generatePlaceholder(email, size / 10);
 	});
 
 	useTask$(async () => {
-		image.value = await generateSource(email, size);
+		low.value = await generateSource(email, size);
+		high.value = await generateSource(email, size * 2);
 	});
 
 	return (
@@ -30,7 +32,8 @@ export default component$<GravatarProperties>(({ email, size, ...props}) => {
 				 {...props} />
 
 			<img class={styles.image}
-				 src={image.value}
+				 src={low.value}
+				 srcset={`${low.value} 1x, ${high.value} 2x`}
 				 width={size}
 				 height={size}
 				 decoding="async"
