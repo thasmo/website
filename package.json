@@ -9,6 +9,7 @@
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build -c adapters/static/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "dev": "vite --mode ssr",
@@ -17,13 +18,13 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "prebuild.pandacss": "panda codegen --silent",
-    "preview": "qwik build preview && vite preview --open",
-    "start": "vite --open --mode ssr",
-    "qwik": "qwik",
-    "spellcheck": "cspell lint **",
     "prepare": "concurrently pnpm:prepare:*",
     "prepare:husky": "husky",
-    "prepare:pandacss": "pandacss codegen"
+    "prepare:pandacss": "pandacss codegen",
+    "preview": "qwik build preview && vite preview --open",
+    "spellcheck": "cspell lint **",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.4.5",
