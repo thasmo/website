@@ -58,7 +58,7 @@ export default defineConfig({
 				subtle: { value: '#fafafa' },
 				base: { value: '#222222' },
 				void: { value: '#111111' },
-				accent: { value: '#44e543' },
+				accent: { value: '#F6995C' },
 			},
 			fonts: {
 				base: {
