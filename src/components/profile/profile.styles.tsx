@@ -6,7 +6,6 @@ export const profile = css({
 	display: 'inline-block',
 	width: '256px',
 	maxWidth: '99%',
-	backgroundColor: 'transparent',
 	verticalAlign: 'middle',
 	transition: 'opacity 250ms, filter 250ms, transform 250ms',
 	sm: {
@@ -36,7 +35,7 @@ export const employer = css({
 	height: '72px',
 	overflow: 'hidden',
 	borderRadius: '2px',
-	backgroundColor: 'blank',
+	backgroundColor: 'void',
 	transition: 'opacity 250ms',
 });
 
