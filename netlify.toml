@@ -2,6 +2,9 @@
 command = "pnpm run build"
 publish = "dist"
 
+[images]
+remote_images = ["https://gravatar.com/.*"]
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
