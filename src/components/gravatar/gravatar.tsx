@@ -18,8 +18,8 @@ export default component$<GravatarProperties>(({ email, size, ...props}) => {
 	});
 
 	useTask$(async () => {
-		low.value = await generateSource(email, size);
-		high.value = await generateSource(email, size * 2);
+		low.value = 'https://thasmo.com/.netlify/images?url=' + await generateSource(email, size);
+		high.value = 'https://thasmo.com/.netlify/images?url=' + await generateSource(email, size * 2);
 	});
 
 	return (
