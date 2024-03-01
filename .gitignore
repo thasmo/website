@@ -1,7 +1,5 @@
-/src/.temp/
 /node_modules/
+/src/styles/
 /dist/
-/.cache/
-.env
-.env.*
-*.log
+/server/
+/tmp/

@@ -1,0 +1,13 @@
+{
+	"name": "Thomas Deinhamer",
+	"pseudonym": "thasmo",
+	"email": "hi@thasmo.com",
+	"position": "Frontend Engineer",
+	"location": "Salzburg, Austria",
+	"biography": "Frontend Engineer from Salzburg, Austria, pushing the web's boundaries at DBG.",
+	"employer": {
+		"name": "DBG Digital Brands Group GmbH",
+		"email": "td@digital-brands-group.com",
+		"website": "https://www.digital-brands-group.com/"
+	}
+}
