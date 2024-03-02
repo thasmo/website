@@ -6,9 +6,7 @@ import profile from '~/data/profile.json';
 
 export default component$(() => {
 	return (
-		<>
-			<Profile/>
-		</>
+		<Profile/>
 	);
 });
 
