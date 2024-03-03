@@ -1,9 +1,9 @@
-import {defineConfig} from "@pandacss/dev";
+import { defineConfig } from '@pandacss/dev';
 
 export default defineConfig({
 	jsxFramework: 'qwik',
 	preflight: true,
-	include: ["./src/**/*.{js,jsx,ts,tsx}"],
+	include: ['./src/**/*.{js,jsx,ts,tsx}'],
 	exclude: [],
 	outdir: 'src/styles',
 	globalCss: {
@@ -25,19 +25,19 @@ export default defineConfig({
 
 			cursor: 'default',
 		},
-		p: {
+		'p': {
 			marginTop: 0,
 			marginBottom: '16px',
 		},
-		img: {
+		'img': {
 			display: 'block',
 			maxWidth: '100%',
 			height: 'auto',
 		},
-		svg: {
+		'svg': {
 			fill: 'currentColor',
 		},
-		a: {
+		'a': {
 			color: 'base',
 			textDecoration: 'none',
 			_active: {

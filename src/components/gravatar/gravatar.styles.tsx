@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const gravatar = css({
 	display: 'grid',

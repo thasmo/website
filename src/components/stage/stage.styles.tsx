@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const stage = css({
 	position: 'relative',

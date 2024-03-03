@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const header = css({
 	marginBottom: '48px',

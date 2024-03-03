@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const panel = css({
 	opacity: 0,
@@ -31,7 +31,7 @@ export const panel = css({
 		_active: {
 			opacity: 1,
 			transform: 'translateX(0)',
-		}
+		},
 	},
 });
 
