@@ -20,28 +20,34 @@ status = 404
 from = "https://thasmo.dev/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://www.thasmo.dev/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://deinhamer.at/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://www.deinhamer.at/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://deinhamer.com/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
 
 [[redirects]]
 from = "https://www.deinhamer.com/*"
 to = "https://thasmo.com/:splat"
 status = 301
+force = true
