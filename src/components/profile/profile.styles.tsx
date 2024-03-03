@@ -38,22 +38,3 @@ export const employer = css({
 	backgroundColor: 'void',
 	transition: 'opacity 250ms',
 });
-
-export const quote = css({
-	opacity: 1,
-	float: 'left',
-	margin: '10px 0 0 0',
-	fontFamily: 'heading',
-	fontSize: '28px',
-	fontWeight: 300,
-	textAlign: 'right',
-	lineHeight: 1.2,
-	letterSpacing: '-.01em',
-	whiteSpace: 'nowrap',
-	transition: 'opacity 250ms',
-});
-
-export const icon = css({
-	display: 'inline-block',
-	color: 'accent',
-});
