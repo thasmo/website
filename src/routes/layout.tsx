@@ -1,5 +1,11 @@
-import {$, component$, Slot, useOnDocument, useSignal} from "@builder.io/qwik";
-import type {RequestHandler} from "@builder.io/qwik-city";
+import {
+	$,
+	component$,
+	Slot,
+	useOnDocument,
+	useSignal,
+} from '@builder.io/qwik';
+import type { RequestHandler } from '@builder.io/qwik-city';
 
 import Stage from '~/components/stage/stage';
 import Panel from '~/components/panel/panel';
@@ -7,7 +13,7 @@ import Bar from '~/components/bar/bar';
 import Section from '~/components/section/section';
 import Project from '~/components/project/project';
 import Contact from '~/components/contact/contact';
-import Headline from "~/components/headline/headline";
+import Headline from '~/components/headline/headline';
 
 import * as styles from './layout.styles';
 
@@ -18,7 +24,7 @@ import projects from '~/data/projects.json';
 import '@fontsource-variable/roboto-condensed/wght.css';
 import '@fontsource-variable/roboto-slab/wght.css';
 
-export const onGet: RequestHandler = async ({cacheControl}) => {
+export const onGet: RequestHandler = async ({ cacheControl }) => {
 	cacheControl({
 		staleWhileRevalidate: 60 * 60 * 24 * 7,
 		maxAge: 5,
@@ -30,18 +36,21 @@ export default component$(() => {
 	const panel = useSignal<Element>();
 	const isActive = useSignal(false);
 
-	useOnDocument('click', $((event) => {
-		if (
-			!panel.value?.contains(event.target as Node) &&
-			!bar.value?.contains(event.target as Node)
-		) {
-			isActive.value = false;
-		}
-	}));
+	useOnDocument(
+		'click',
+		$((event) => {
+			if (
+				!panel.value?.contains(event.target as Node) &&
+				!bar.value?.contains(event.target as Node)
+			) {
+				isActive.value = false;
+			}
+		}),
+	);
 
 	return (
 		<Stage>
-			<Slot/>
+			<Slot />
 
 			<Panel ref={panel} isActive={isActive}>
 				<header class={styles.header}>
@@ -50,11 +59,16 @@ export default component$(() => {
 					</Headline>
 
 					<p>
-						<b>{profile.position} from {profile.location},</b>
-						<wbr/>
+						<b>
+							{profile.position} from {profile.location},
+						</b>
+						<wbr />
 						pushing the web's boundaries at
-						<wbr/>
-						<a href={profile.employer.website} rel="noopener">{profile.employer.name}</a>.
+						<wbr />
+						<a href={profile.employer.website} rel="noopener">
+							{profile.employer.name}
+						</a>
+						.
 					</p>
 				</header>
 
@@ -64,7 +78,8 @@ export default component$(() => {
 							key={project.address}
 							name={project.name}
 							address={project.address}
-							description={project.description}/>
+							description={project.description}
+						/>
 					))}
 				</Section>
 
@@ -74,7 +89,8 @@ export default component$(() => {
 							<Contact
 								type={channel.type}
 								address={channel.address}
-								label={channel.label}/>
+								label={channel.label}
+							/>
 						</p>
 					))}
 				</Section>
@@ -84,7 +100,7 @@ export default component$(() => {
 				ref={bar}
 				channels={channels}
 				isActive={isActive}
-				onToggle={$(() => isActive.value = !isActive.value)}
+				onToggle={$(() => (isActive.value = !isActive.value))}
 			/>
 		</Stage>
 	);

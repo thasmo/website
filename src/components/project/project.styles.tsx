@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const project = css({
 	marginBottom: '24px',

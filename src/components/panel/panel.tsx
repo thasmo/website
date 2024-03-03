@@ -1,4 +1,4 @@
-import {component$, type PropsOf, type Signal, Slot} from '@builder.io/qwik';
+import { component$, type PropsOf, type Signal, Slot } from '@builder.io/qwik';
 
 import * as styles from './panel.styles';
 
@@ -10,7 +10,7 @@ export default component$<PanelProperties>(({ isActive, ...props }) => {
 	return (
 		<main class={styles.panel} data-active={isActive.value} {...props}>
 			<section class={styles.content}>
-				<Slot/>
+				<Slot />
 			</section>
 		</main>
 	);

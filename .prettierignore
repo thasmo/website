@@ -1,2 +1,8 @@
-# Panda CSS
-src/styled-system
+/node_modules/
+/src/styles/
+/dist/
+/server/
+/tmp/
+
+pnpm-lock.yaml
+LICENSE.md

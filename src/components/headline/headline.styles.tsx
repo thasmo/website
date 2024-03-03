@@ -1,4 +1,4 @@
-import {cva} from '~/styles/css';
+import { cva } from '~/styles/css';
 
 export const headline = cva({
 	base: {},

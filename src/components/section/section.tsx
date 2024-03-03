@@ -1,4 +1,4 @@
-import {component$, type PropsOf, Slot} from '@builder.io/qwik';
+import { component$, type PropsOf, Slot } from '@builder.io/qwik';
 
 import Headline from '~/components/headline/headline';
 
@@ -16,7 +16,7 @@ export default component$<SectionProperties>(({ title, ...props }) => {
 			</Headline>
 
 			<div class={styles.content}>
-				<Slot/>
+				<Slot />
 			</div>
 		</section>
 	);

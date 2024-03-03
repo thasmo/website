@@ -1,4 +1,4 @@
-import {css} from '~/styles/css';
+import { css } from '~/styles/css';
 
 export const contact = css({
 	fontSize: '18px',
