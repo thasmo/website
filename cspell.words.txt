@@ -11,3 +11,4 @@ deinhamer
 roboto
 outdir
 sublicensable
+nosniff

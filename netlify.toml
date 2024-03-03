@@ -5,6 +5,14 @@ publish = "dist"
 [images]
 remote_images = ["https://gravatar.com/.*"]
 
+[[headers]]
+for = "/*"
+[headers.values]
+Referrer-Policy = "no-referrer"
+Permissions-Policy = ""
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+
 [[redirects]]
 from = "/index.html"
 to = "/"
