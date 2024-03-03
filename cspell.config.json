@@ -16,7 +16,6 @@
 			"addWords": true
 		}
 	],
-
 	"ignorePaths": [
 		"/node_modules",
 		"/tmp",
