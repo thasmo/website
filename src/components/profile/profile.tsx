@@ -9,7 +9,7 @@ export type ProfileProperties = PropsOf<'div'>;
 export default component$<ProfileProperties>(({...props}) => {
 	return (
 		<div class={styles.profile} {...props}>
-			<figure class={styles.figure} title="web matters">
+			<figure class={styles.figure}>
 				<span class={styles.link}>
 					<Gravatar email={profile.email} size={256} alt={`Photo of ${profile.name}`}/>
 				</span>
