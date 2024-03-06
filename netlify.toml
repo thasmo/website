@@ -14,17 +14,6 @@ X-Frame-Options = "DENY"
 X-Content-Type-Options = "nosniff"
 
 [[redirects]]
-from = "/index.html"
-to = "/"
-status = 301
-force = true
-
-#[[redirects]]
-#from = "/*"
-#to = "/404.html"
-#status = 404
-
-[[redirects]]
 from = "https://thasmo.dev/*"
 to = "https://thasmo.com/:splat"
 status = 301
@@ -59,3 +48,14 @@ from = "https://www.deinhamer.com/*"
 to = "https://thasmo.com/:splat"
 status = 301
 force = true
+
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/404.html"
+status = 404
