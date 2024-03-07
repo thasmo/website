@@ -1,19 +1,9 @@
-import { component$, useSignal, useTask$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
-import { generateSource } from '~/components/gravatar/gravatar.utilities';
-
-import profile from '~/data/profile.json';
-
 export default component$(() => {
-	const icon = useSignal<string>();
-
 	const head = useDocumentHead();
 	const location = useLocation();
-
-	useTask$(async () => {
-		icon.value = await generateSource(profile.email);
-	});
 
 	return (
 		<>
@@ -27,7 +17,7 @@ export default component$(() => {
 				<meta key={meta.key} {...meta} />
 			))}
 
-			<link rel="icon" href={icon.value} />
+			<link rel="icon" href="https://avatar.thasmo.com/favicon.ico" />
 			<link rel="manifest" href="/manifest.json" />
 			<link rel="canonical" href={location.url.href} />
 

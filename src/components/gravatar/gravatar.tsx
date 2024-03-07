@@ -4,7 +4,7 @@ import {
 	useSignal,
 	useTask$,
 } from '@builder.io/qwik';
-import { generateSource } from '~/components/gravatar/gravatar.utilities';
+import { generateHash } from '~/components/gravatar/gravatar.utilities';
 
 import * as styles from './gravatar.styles';
 
@@ -18,12 +18,10 @@ export default component$<GravatarProperties>(({ email, size, ...props }) => {
 	const high = useSignal<string>();
 
 	useTask$(async () => {
-		low.value =
-			'https://thasmo.com/.netlify/images?url=' +
-			(await generateSource(email, size));
-		high.value =
-			'https://thasmo.com/.netlify/images?url=' +
-			(await generateSource(email, size * 2));
+		const hash = await generateHash(email);
+
+		low.value = `https://avatar.thasmo.com/${hash}/${size}`;
+		high.value = `https://avatar.thasmo.com/${hash}/${size * 2}`;
 	});
 
 	return (
