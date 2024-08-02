@@ -29,10 +29,10 @@ importers:
         version: 0.30.2(typescript@5.5.4)
       '@somehow-digital/eslint-config':
         specifier: github:somehow-digital/eslint-config
-        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/495b349bdb59393e08ec35e66b0fa71e1525e6b9(@types/eslint@8.56.11)(eslint@9.8.0)(prettier@3.2.5)(typescript@5.5.4)
+        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/495b349bdb59393e08ec35e66b0fa71e1525e6b9(@types/eslint@8.56.11)(eslint@9.8.0)(prettier@3.3.3)(typescript@5.5.4)
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
-        version: 2.0.0(prettier@3.2.5)
+        version: 2.0.0(prettier@3.3.3)
       '@types/node':
         specifier: ^20.11.25
         version: 20.14.12
@@ -55,8 +55,8 @@ importers:
         specifier: ^15.2.2
         version: 15.2.7
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.3
+        version: 3.3.3
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -2687,8 +2687,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4170,17 +4170,17 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.19.0':
     optional: true
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/495b349bdb59393e08ec35e66b0fa71e1525e6b9(@types/eslint@8.56.11)(eslint@9.8.0)(prettier@3.2.5)(typescript@5.5.4)':
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/495b349bdb59393e08ec35e66b0fa71e1525e6b9(@types/eslint@8.56.11)(eslint@9.8.0)(prettier@3.3.3)(typescript@5.5.4)':
     dependencies:
       '@cspell/eslint-plugin': 8.13.1(eslint@9.8.0)
       '@eslint/js': 9.8.0
       eslint: 9.8.0
       eslint-config-prettier: 9.1.0(eslint@9.8.0)
       eslint-plugin-perfectionist: 3.0.0(eslint@9.8.0)(typescript@5.5.4)
-      eslint-plugin-prettier: 5.2.1(@types/eslint@8.56.11)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.2.5)
+      eslint-plugin-prettier: 5.2.1(@types/eslint@8.56.11)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)
       eslint-plugin-promise: 7.0.0(eslint@9.8.0)
       eslint-plugin-unicorn: 55.0.0(eslint@9.8.0)
-      prettier: 3.2.5
+      prettier: 3.3.3
       typescript: 5.5.4
       typescript-eslint: 8.0.0(eslint@9.8.0)(typescript@5.5.4)
     transitivePeerDependencies:
@@ -4191,9 +4191,9 @@ snapshots:
       - svelte-eslint-parser
       - vue-eslint-parser
 
-  '@somehow-digital/prettier-config@2.0.0(prettier@3.2.5)':
+  '@somehow-digital/prettier-config@2.0.0(prettier@3.3.3)':
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.3.3
 
   '@trysound/sax@0.2.0': {}
 
@@ -5012,10 +5012,10 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-prettier@5.2.1(@types/eslint@8.56.11)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.2.5):
+  eslint-plugin-prettier@5.2.1(@types/eslint@8.56.11)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3):
     dependencies:
       eslint: 9.8.0
-      prettier: 3.2.5
+      prettier: 3.3.3
       prettier-linter-helpers: 1.0.0
       synckit: 0.9.1
     optionalDependencies:
@@ -6144,7 +6144,7 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  prettier@3.2.5: {}
+  prettier@3.3.3: {}
 
   property-information@6.5.0: {}
 
