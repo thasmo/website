@@ -1,29 +1,40 @@
 import { component$, type PropsOf } from '@builder.io/qwik';
 
 import Email from '~/components/icons/channels/email';
-import Xing from '~/components/icons/channels/xing';
 import GitHub from '~/components/icons/channels/github';
 import LinkedIn from '~/components/icons/channels/linkedin';
 import StackOverflow from '~/components/icons/channels/stackoverflow';
 import Twitter from '~/components/icons/channels/twitter';
+import Xing from '~/components/icons/channels/xing';
 
-export type ChannelProperties = PropsOf<'svg'> & {
+export type ChannelProperties = {
 	type: string;
-};
+} & PropsOf<'svg'>;
 
-export default component$<ChannelProperties>(({ type, ...props }) => {
+export default component$<ChannelProperties>(({ type, ...properties }) => {
 	switch (type) {
-		case 'email':
-			return <Email {...props} />;
-		case 'xing':
-			return <Xing {...props} />;
-		case 'github':
-			return <GitHub {...props} />;
-		case 'linkedin':
-			return <LinkedIn {...props} />;
-		case 'stackoverflow':
-			return <StackOverflow {...props} />;
-		case 'twitter':
-			return <Twitter {...props} />;
+		case 'email': {
+			return <Email {...properties} />;
+		}
+
+		case 'github': {
+			return <GitHub {...properties} />;
+		}
+
+		case 'linkedin': {
+			return <LinkedIn {...properties} />;
+		}
+
+		case 'stackoverflow': {
+			return <StackOverflow {...properties} />;
+		}
+
+		case 'twitter': {
+			return <Twitter {...properties} />;
+		}
+
+		case 'xing': {
+			return <Xing {...properties} />;
+		}
 	}
 });

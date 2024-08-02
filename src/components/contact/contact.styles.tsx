@@ -5,10 +5,10 @@ export const contact = css({
 });
 
 export const icon = css({
+	display: 'inline-block',
+	fontSize: '125%',
+	marginRight: '5px',
 	position: 'relative',
 	top: '-2px',
-	display: 'inline-block',
-	marginRight: '5px',
 	verticalAlign: 'middle',
-	fontSize: '125%',
 });

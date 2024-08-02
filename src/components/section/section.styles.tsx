@@ -1,10 +1,10 @@
 import { css } from '~/styles/css';
 
 export const section = css({
-	marginBottom: '48px',
 	_last: {
 		marginBottom: 0,
 	},
+	marginBottom: '48px',
 });
 
 export const headline = css({

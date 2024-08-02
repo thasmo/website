@@ -1,5 +1,7 @@
 export default {
-	'*': 'pnpm run spellcheck',
-	'*.{js,mjs,cjs,jsx,ts,tsx}': 'pnpm run lint',
-	'*.{css,json,md,toml,txt}': 'pnpm run fmt.check',
+	'**/*.{js,jsx,ts,tsx}': ['eslint'],
+	'**/*.{md,json,yml,yaml}': [
+		'prettier --check',
+		'cspell --no-progress --no-must-find-files',
+	],
 };

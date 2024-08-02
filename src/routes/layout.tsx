@@ -1,3 +1,5 @@
+import type { RequestHandler } from '@builder.io/qwik-city';
+
 import {
 	$,
 	component$,
@@ -5,29 +7,26 @@ import {
 	useOnDocument,
 	useSignal,
 } from '@builder.io/qwik';
-import type { RequestHandler } from '@builder.io/qwik-city';
-
-import Stage from '~/components/stage/stage';
-import Panel from '~/components/panel/panel';
-import Bar from '~/components/bar/bar';
-import Section from '~/components/section/section';
-import Project from '~/components/project/project';
-import Contact from '~/components/contact/contact';
-import Headline from '~/components/headline/headline';
-
-import * as styles from './layout.styles';
-
-import profile from '~/data/profile.json';
-import channels from '~/data/channels.json';
-import projects from '~/data/projects.json';
-
 import '@fontsource-variable/roboto-condensed/wght.css';
 import '@fontsource-variable/roboto-slab/wght.css';
 
+import Bar from '~/components/bar/bar';
+import Contact from '~/components/contact/contact';
+import Headline from '~/components/headline/headline';
+import Panel from '~/components/panel/panel';
+import Project from '~/components/project/project';
+import Section from '~/components/section/section';
+import Stage from '~/components/stage/stage';
+import channels from '~/data/channels.json';
+import profile from '~/data/profile.json';
+import projects from '~/data/projects.json';
+
+import * as styles from './layout.styles';
+
 export const onGet: RequestHandler = async ({ cacheControl }) => {
 	cacheControl({
-		staleWhileRevalidate: 60 * 60 * 24 * 7,
 		maxAge: 5,
+		staleWhileRevalidate: 60 * 60 * 24 * 7,
 	});
 };
 
@@ -52,7 +51,7 @@ export default component$(() => {
 		<Stage>
 			<Slot />
 
-			<Panel ref={panel} isActive={isActive}>
+			<Panel isActive={isActive} ref={panel}>
 				<header class={styles.header}>
 					<Headline class={styles.headline} level={1}>
 						{profile.name}
@@ -75,10 +74,10 @@ export default component$(() => {
 				<Section title="Side Projects">
 					{projects.map((project) => (
 						<Project
-							key={project.address}
-							name={project.name}
 							address={project.address}
 							description={project.description}
+							key={project.address}
+							name={project.name}
 						/>
 					))}
 				</Section>
@@ -87,9 +86,9 @@ export default component$(() => {
 					{channels.map((channel) => (
 						<p key={channel.type}>
 							<Contact
-								type={channel.type}
 								address={channel.address}
 								label={channel.label}
+								type={channel.type}
 							/>
 						</p>
 					))}
@@ -97,10 +96,10 @@ export default component$(() => {
 			</Panel>
 
 			<Bar
-				ref={bar}
 				channels={channels}
 				isActive={isActive}
 				onToggle={$(() => (isActive.value = !isActive.value))}
+				ref={bar}
 			/>
 		</Stage>
 	);

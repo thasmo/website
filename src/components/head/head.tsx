@@ -7,19 +7,19 @@ export default component$(() => {
 
 	return (
 		<>
-			<meta charSet={'utf-8'} />
+			<meta charSet="utf-8" />
 
 			<title>{head.title}</title>
 
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 			{head.meta.map((meta) => (
 				<meta key={meta.key} {...meta} />
 			))}
 
-			<link rel="icon" href="https://avatar.thasmo.com/favicon.ico" />
-			<link rel="manifest" href="/manifest.json" />
-			<link rel="canonical" href={location.url.href} />
+			<link href="https://avatar.thasmo.com/favicon.ico" rel="icon" />
+			<link href="/manifest.json" rel="manifest" />
+			<link href={location.url.href} rel="canonical" />
 
 			{head.links.map((link) => (
 				<link key={link.key} {...link} />

@@ -1,18 +1,18 @@
 import { css } from '~/styles/css';
 
 export const channel = css({
-	position: 'relative',
-	display: 'flex',
-	flexGrow: 1,
-	justifyContent: 'center',
 	alignItems: 'center',
 	color: '#ccc',
+	display: 'flex',
+	flexGrow: 1,
 	fontSize: '28px',
+	justifyContent: 'center',
+	position: 'relative',
 	textDecoration: 'none',
 	transition: 'color 250ms, opacity 250ms, background 250ms',
 });
 
 export const icon = css({
-	width: '100%',
 	maxWidth: '32px',
+	width: '100%',
 });

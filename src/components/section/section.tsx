@@ -4,13 +4,13 @@ import Headline from '~/components/headline/headline';
 
 import * as styles from './section.styles';
 
-export type SectionProperties = PropsOf<'section'> & {
+export type SectionProperties = {
 	title: string;
-};
+} & PropsOf<'section'>;
 
-export default component$<SectionProperties>(({ title, ...props }) => {
+export default component$<SectionProperties>(({ title, ...properties }) => {
 	return (
-		<section class={styles.section} {...props}>
+		<section class={styles.section} {...properties}>
 			<Headline class={styles.headline} level={2}>
 				{title}
 			</Headline>

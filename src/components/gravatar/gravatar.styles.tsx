@@ -5,7 +5,7 @@ export const gravatar = css({
 });
 
 export const image = css({
+	gridArea: '1/-1',
 	position: 'relative',
 	zIndex: 1,
-	gridArea: '1/-1',
 });

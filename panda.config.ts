@@ -1,45 +1,27 @@
 import { defineConfig } from '@pandacss/dev';
 
 export default defineConfig({
-	jsxFramework: 'qwik',
-	preflight: true,
-	include: ['./src/**/*.{js,jsx,ts,tsx}'],
 	exclude: [],
-	outdir: 'src/styles',
 	globalCss: {
 		'::selection': {
 			background: 'accent',
 			color: 'blank',
 		},
 		':root': {
-			overflow: 'hidden',
-			height: '100%',
-			width: '100%',
-
 			color: 'lighten($color-base, 25)',
+			cursor: 'default',
 			fontFamily: 'base',
+
 			fontSize: '16px',
 			fontWeight: 300,
-			textAlign: 'center',
+			height: '100%',
 			lineHeight: 1.5,
+			overflow: 'hidden',
+			textAlign: 'center',
 
-			cursor: 'default',
-		},
-		'p': {
-			marginTop: 0,
-			marginBottom: '16px',
-		},
-		'img': {
-			display: 'block',
-			maxWidth: '100%',
-			height: 'auto',
-		},
-		'svg': {
-			fill: 'currentColor',
+			width: '100%',
 		},
 		'a': {
-			color: 'base',
-			textDecoration: 'none',
 			_active: {
 				backgroundColor: 'transparent',
 			},
@@ -49,26 +31,27 @@ export default defineConfig({
 			_osDark: {
 				color: 'subtle',
 			},
+			color: 'base',
+			textDecoration: 'none',
+		},
+		'img': {
+			display: 'block',
+			height: 'auto',
+			maxWidth: '100%',
+		},
+		'p': {
+			marginBottom: '16px',
+			marginTop: 0,
+		},
+		'svg': {
+			fill: 'currentColor',
 		},
 	},
+	include: ['./src/**/*.{js,jsx,ts,tsx}'],
+	jsxFramework: 'qwik',
+	outdir: 'src/styles',
+	preflight: true,
 	theme: {
-		tokens: {
-			colors: {
-				blank: { value: '#ffffff' },
-				subtle: { value: '#fafafa' },
-				base: { value: '#222222' },
-				void: { value: '#111111' },
-				accent: { value: '#F6995C' },
-			},
-			fonts: {
-				base: {
-					value: ['Roboto Slab Variable', 'sans-serif'],
-				},
-				heading: {
-					value: ['Roboto Condensed Variable', 'sans-serif'],
-				},
-			},
-		},
 		breakpoints: {
 			sm: '480px',
 		},
@@ -78,8 +61,8 @@ export default defineConfig({
 					fontFamily: 'heading',
 					fontSize: '48px',
 					fontWeight: 300,
-					textTransform: 'lowercase',
 					lineHeight: 1.2,
+					textTransform: 'lowercase',
 				},
 			},
 			h2: {
@@ -87,8 +70,8 @@ export default defineConfig({
 					fontFamily: 'heading',
 					fontSize: '36px',
 					fontWeight: 300,
-					textTransform: 'lowercase',
 					lineHeight: 1.2,
+					textTransform: 'lowercase',
 				},
 			},
 			h3: {
@@ -97,6 +80,23 @@ export default defineConfig({
 					fontSize: '24px',
 					fontWeight: 300,
 					lineHeight: 1.2,
+				},
+			},
+		},
+		tokens: {
+			colors: {
+				accent: { value: '#F6995C' },
+				base: { value: '#222222' },
+				blank: { value: '#ffffff' },
+				subtle: { value: '#fafafa' },
+				void: { value: '#111111' },
+			},
+			fonts: {
+				base: {
+					value: ['Roboto Slab Variable', 'sans-serif'],
+				},
+				heading: {
+					value: ['Roboto Condensed Variable', 'sans-serif'],
 				},
 			},
 		},

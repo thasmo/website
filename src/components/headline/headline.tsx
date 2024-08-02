@@ -1,27 +1,28 @@
 import { component$, type PropsOf, Slot } from '@builder.io/qwik';
+
 import { headline } from '~/components/headline/headline.styles';
 import { cx, type RecipeVariantProps } from '~/styles/css';
 
-export type HeadlineProperties = PropsOf<'div'> &
-	RecipeVariantProps<typeof headline> & {
-		tag?: string;
-	};
+export type HeadlineProperties = {
+	tag?: string;
+} & PropsOf<'div'> &
+	RecipeVariantProps<typeof headline>;
 
 export default component$<HeadlineProperties>(
-	({ level = 1, tag, ...props }) => {
+	({ level = 1, tag, ...properties }) => {
 		const Headline = tag || `h${level}`;
-		const [styleProps, componentProps] = headline.splitVariantProps({
+		const [styleProperties, componentProperties] = headline.splitVariantProps({
 			level,
-			...props,
+			...properties,
 		});
 
-		componentProps.class = cx(
-			headline(styleProps),
-			componentProps.class as string,
+		componentProperties.class = cx(
+			headline(styleProperties),
+			componentProperties.class as string,
 		);
 
 		return (
-			<Headline {...componentProps}>
+			<Headline {...componentProperties}>
 				<Slot />
 			</Headline>
 		);

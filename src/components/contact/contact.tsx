@@ -1,18 +1,18 @@
 import { component$, type PropsOf } from '@builder.io/qwik';
 
-import * as styles from './contact.styles';
 import Channel from '../icons/channel';
+import * as styles from './contact.styles';
 
-export type ContactProperties = PropsOf<'a'> & {
-	type: string;
-	label: string;
+export type ContactProperties = {
 	address: string;
-};
+	label: string;
+	type: string;
+} & PropsOf<'a'>;
 
 export default component$<ContactProperties>(
-	({ type, label, address, ...props }) => {
+	({ address, label, type, ...properties }) => {
 		return (
-			<a class={styles.contact} href={address} rel="noopener" {...props}>
+			<a class={styles.contact} href={address} rel="noopener" {...properties}>
 				<Channel class={styles.icon} type={type} />
 				{label}
 			</a>

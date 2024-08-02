@@ -3,15 +3,16 @@ import {
 	type RenderToStreamOptions,
 } from '@builder.io/qwik/server';
 import { manifest } from '@qwik-client-manifest';
+
 import Root from './root';
 
-export default function (opts: RenderToStreamOptions) {
+export default function entry(options: RenderToStreamOptions) {
 	return renderToStream(<Root />, {
 		manifest,
-		...opts,
+		...options,
 		containerAttributes: {
 			lang: 'en-us',
-			...opts.containerAttributes,
+			...options.containerAttributes,
 		},
 	});
 }

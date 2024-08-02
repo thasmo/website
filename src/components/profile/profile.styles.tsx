@@ -1,40 +1,40 @@
 import { css } from '~/styles/css';
 
 export const profile = css({
-	position: 'relative',
-	top: '-30px',
 	display: 'inline-block',
-	width: '256px',
 	maxWidth: '99%',
-	verticalAlign: 'middle',
-	transition: 'opacity 250ms, filter 250ms, transform 250ms',
+	position: 'relative',
 	sm: {
 		top: 'auto',
 	},
+	top: '-30px',
+	transition: 'opacity 250ms, filter 250ms, transform 250ms',
+	verticalAlign: 'middle',
+	width: '256px',
 });
 
 export const figure = css({
-	position: 'relative',
 	margin: 0,
+	position: 'relative',
 });
 
 export const link = css({
+	backgroundColor: 'blank',
+	borderRadius: '100%',
 	display: 'block',
 	overflow: 'hidden',
-	borderRadius: '100%',
-	backgroundColor: 'blank',
 });
 
 export const employer = css({
+	backgroundColor: 'void',
+	borderRadius: '2px',
+	bottom: 0,
+	display: 'block',
+	height: '72px',
+	opacity: 1,
+	overflow: 'hidden',
 	position: 'absolute',
 	right: 0,
-	bottom: 0,
-	opacity: 1,
-	display: 'block',
-	width: '72px',
-	height: '72px',
-	overflow: 'hidden',
-	borderRadius: '2px',
-	backgroundColor: 'void',
 	transition: 'opacity 250ms',
+	width: '72px',
 });

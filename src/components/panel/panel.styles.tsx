@@ -1,18 +1,6 @@
 import { css } from '~/styles/css';
 
 export const panel = css({
-	opacity: 0,
-	visibility: 'hidden',
-	overflow: 'auto',
-	position: 'fixed',
-	top: 0,
-	bottom: 0,
-	right: 0,
-	zIndex: 1,
-	width: '100vw',
-	textAlign: 'left',
-	backgroundColor: 'subtle',
-	transition: 'visibility 250ms, opacity 250ms, transform 250ms',
 	_active: {
 		opacity: 1,
 		visibility: 'visible',
@@ -20,19 +8,31 @@ export const panel = css({
 	_osDark: {
 		backgroundColor: 'void',
 	},
+	backgroundColor: 'subtle',
+	bottom: 0,
+	opacity: 0,
+	overflow: 'auto',
+	position: 'fixed',
+	right: 0,
 	sm: {
-		opacity: 1,
-		right: '50px',
-		bottom: 0,
-		width: '640px',
-		maxWidth: 'calc(100vw - 50px)',
-		backgroundColor: 'blank',
-		transform: 'translateX(100%)',
 		_active: {
 			opacity: 1,
 			transform: 'translateX(0)',
 		},
+		backgroundColor: 'blank',
+		bottom: 0,
+		maxWidth: 'calc(100vw - 50px)',
+		opacity: 1,
+		right: '50px',
+		transform: 'translateX(100%)',
+		width: '640px',
 	},
+	textAlign: 'left',
+	top: 0,
+	transition: 'visibility 250ms, opacity 250ms, transform 250ms',
+	visibility: 'hidden',
+	width: '100vw',
+	zIndex: 1,
 });
 
 export const content = css({

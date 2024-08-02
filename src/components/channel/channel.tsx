@@ -1,26 +1,27 @@
 import { component$, type PropsOf } from '@builder.io/qwik';
+
 import Channel from '~/components/icons/channel';
 
 import * as styles from './channel.styles';
 
-export type ChannelProperties = PropsOf<'a'> & {
-	title: string;
+export type ChannelProperties = {
 	address: string;
-	type: string;
 	color: string;
 	primary?: boolean;
-};
+	title: string;
+	type: string;
+} & PropsOf<'a'>;
 
 export default component$<ChannelProperties>(
-	({ title, address, type, color, class: classes, ...props }) => {
+	({ address, class: classes, color, title, type, ...properties }) => {
 		return (
 			<a
 				class={[styles.channel, classes]}
 				href={address}
-				title={title}
 				rel="me noopener"
 				style={`--color: ${color};`}
-				{...props}>
+				title={title}
+				{...properties}>
 				<Channel type={type} />
 			</a>
 		);
