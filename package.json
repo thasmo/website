@@ -37,7 +37,7 @@
 		"@builder.io/qwik": "^1.5.1",
 		"@builder.io/qwik-city": "^1.5.1",
 		"@builder.io/vite-plugin-macro": "~0.0.7",
-		"@pandacss/dev": "^0.30.2",
+		"@pandacss/dev": "^0.44.0",
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
 		"@somehow-digital/prettier-config": "^2.0.0",
 		"@types/node": "^20.11.25",
