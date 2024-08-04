@@ -20,6 +20,7 @@
 		"lint:tsc": "tsc --noEmit --pretty",
 		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
 		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
+		"lint:cspell": "cspell --no-progress --no-summary --dot --no-must-find-files '**/*.*'",
 		"fix": "concurrently --group --prefix-colors 'auto' 'pnpm:fix:*'",
 		"fix:eslint": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
 		"fix:prettier": "prettier --write '**/*.{md,json,yml,yaml}'",
@@ -29,7 +30,6 @@
 		"prepare:husky": "husky",
 		"prepare:pandacss": "pandacss codegen",
 		"preview": "qwik build preview && vite preview --open",
-		"spellcheck": "cspell lint **",
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik"
 	},
@@ -41,6 +41,7 @@
 		"@cspell/dict-de-de": "^4.0.0",
 		"@pandacss/dev": "^0.44.0",
 		"@somehow-digital/commitlint-plugin-spellcheck": "^1.0.1",
+		"@somehow-digital/cspell-dictionary": "^1.0.0",
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
 		"@somehow-digital/prettier-config": "^2.0.0",
 		"@types/node": "^20.11.25",

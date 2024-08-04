@@ -1,16 +1,5 @@
 export default {
-	dictionaries: [
-		'en_US',
-		'de-de',
-		'softwareTerms',
-		'typescript',
-		'node',
-		'html',
-		'css',
-		'bash',
-		'misc',
-		'project',
-	],
+	dictionaries: ['project'],
 	dictionaryDefinitions: [
 		{
 			addWords: true,
@@ -18,16 +7,8 @@ export default {
 			path: './dictionary.txt',
 		},
 	],
-	ignorePaths: [
-		'/node_modules/',
-		'/tmp/',
-		'/dist/',
-		'/server/',
-		'/src/styles/',
-		'package.json',
-		'pnpm-lock.yaml',
-	],
-	import: ['@cspell/dict-de-de'],
+	ignorePaths: ['**/dist', '**/tmp/', '**/server/', '**/src/styles/'],
+	import: ['@somehow-digital/cspell-dictionary'],
 	language: 'en',
 	version: '0.2',
 };
