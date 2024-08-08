@@ -45,6 +45,9 @@ importers:
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.3.3)
+      '@somehow-digital/typescript-config':
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.5.4)
       '@types/node':
         specifier: ^20.11.25
         version: 20.14.14
@@ -1208,6 +1211,12 @@ packages:
     resolution: {integrity: sha512-6QwCArvScVHIIX35uNCbjnqhy5z+pyIMk6UL+8tJ6ThQ/kIUY3azgauo+Ww5ujWllYGAQ0+Qd/mZhkjkHFYlQQ==}
     peerDependencies:
       prettier: ^3.0.3
+
+  '@somehow-digital/typescript-config@2.0.0':
+    resolution: {integrity: sha512-AgsonVqwjm4dX6dhguE2EyuaFPRk5dLFqtPNIW2Xr5zvd3X1Ay9g3MCKZW1DDRzPKlArEppJ/OKAhKDHP7Ubwg==}
+    engines: {node: '>=20', pnpm: '>=9'}
+    peerDependencies:
+      typescript: ^5.4.5
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -4587,6 +4596,10 @@ snapshots:
   '@somehow-digital/prettier-config@2.0.0(prettier@3.3.3)':
     dependencies:
       prettier: 3.3.3
+
+  '@somehow-digital/typescript-config@2.0.0(typescript@5.5.4)':
+    dependencies:
+      typescript: 5.5.4
 
   '@trysound/sax@0.2.0': {}
 
