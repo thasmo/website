@@ -45,6 +45,9 @@ importers:
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.3.3)
+      '@somehow-digital/typescript-config':
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.5.4)
       '@types/node':
         specifier: ^20.11.25
         version: 20.14.14
@@ -79,8 +82,8 @@ importers:
         specifier: ^5.1.5
         version: 5.4.0(@types/node@20.14.14)(lightningcss@1.25.1)
       vite-tsconfig-paths:
-        specifier: ^4.3.1
-        version: 4.3.2(typescript@5.5.4)(vite@5.4.0(@types/node@20.14.14)(lightningcss@1.25.1))
+        specifier: ^5.0.0
+        version: 5.0.0(typescript@5.5.4)(vite@5.4.0(@types/node@20.14.14)(lightningcss@1.25.1))
 
 packages:
 
@@ -1208,6 +1211,12 @@ packages:
     resolution: {integrity: sha512-6QwCArvScVHIIX35uNCbjnqhy5z+pyIMk6UL+8tJ6ThQ/kIUY3azgauo+Ww5ujWllYGAQ0+Qd/mZhkjkHFYlQQ==}
     peerDependencies:
       prettier: ^3.0.3
+
+  '@somehow-digital/typescript-config@2.0.0':
+    resolution: {integrity: sha512-AgsonVqwjm4dX6dhguE2EyuaFPRk5dLFqtPNIW2Xr5zvd3X1Ay9g3MCKZW1DDRzPKlArEppJ/OKAhKDHP7Ubwg==}
+    engines: {node: '>=20', pnpm: '>=9'}
+    peerDependencies:
+      typescript: ^5.4.5
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -3347,8 +3356,8 @@ packages:
     engines: {node: '>=v14.18.0'}
     hasBin: true
 
-  vite-tsconfig-paths@4.3.2:
-    resolution: {integrity: sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA==}
+  vite-tsconfig-paths@5.0.0:
+    resolution: {integrity: sha512-sCdKc6uC7ir102lW8deBiMnS0NGEs0100OJX8WZQmf3Uf7tJ/T3uQnzznq/tZWph7tkG+44JYOsKE7YTZjDn+Q==}
     peerDependencies:
       vite: '*'
     peerDependenciesMeta:
@@ -4187,7 +4196,7 @@ snapshots:
   '@eslint/config-array@0.17.1':
     dependencies:
       '@eslint/object-schema': 2.1.4
-      debug: 4.3.5
+      debug: 4.3.6
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4195,7 +4204,7 @@ snapshots:
   '@eslint/eslintrc@3.1.0':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.5
+      debug: 4.3.6
       espree: 10.1.0
       globals: 14.0.0
       ignore: 5.3.1
@@ -4587,6 +4596,10 @@ snapshots:
   '@somehow-digital/prettier-config@2.0.0(prettier@3.3.3)':
     dependencies:
       prettier: 3.3.3
+
+  '@somehow-digital/typescript-config@2.0.0(typescript@5.5.4)':
+    dependencies:
+      typescript: 5.5.4
 
   '@trysound/sax@0.2.0': {}
 
@@ -7096,9 +7109,9 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.3.2(typescript@5.5.4)(vite@5.4.0(@types/node@20.14.14)(lightningcss@1.25.1)):
+  vite-tsconfig-paths@5.0.0(typescript@5.5.4)(vite@5.4.0(@types/node@20.14.14)(lightningcss@1.25.1)):
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.6
       globrex: 0.1.2
       tsconfck: 3.1.1(typescript@5.5.4)
     optionalDependencies:

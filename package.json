@@ -44,6 +44,7 @@
 		"@somehow-digital/cspell-dictionary": "^1.0.0",
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
 		"@somehow-digital/prettier-config": "^2.0.0",
+		"@somehow-digital/typescript-config": "^2.0.0",
 		"@types/node": "^20.11.25",
 		"autoprefixer": "^10.4.18",
 		"concurrently": "^8.2.2",
@@ -55,7 +56,7 @@
 		"typescript": "^5.5.4",
 		"undici": "^6.7.0",
 		"vite": "^5.1.5",
-		"vite-tsconfig-paths": "^4.3.1"
+		"vite-tsconfig-paths": "^5.0.0"
 	},
 	"trustedDependencies": [
 		"sharp"
