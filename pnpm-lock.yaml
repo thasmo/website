@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fontsource-variable/roboto-condensed':
         specifier: ^5.0.2
-        version: 5.0.3
+        version: 5.0.4
       '@fontsource-variable/roboto-slab':
         specifier: ^5.0.19
-        version: 5.0.20
+        version: 5.0.21
     devDependencies:
       '@builder.io/qwik':
         specifier: ^1.5.1
@@ -41,7 +41,7 @@ importers:
         version: 1.0.0(cspell@8.13.3)
       '@somehow-digital/eslint-config':
         specifier: github:somehow-digital/eslint-config
-        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/c77c5b2091346d806c5679b1180a1ad853c92f9e(@types/eslint@8.56.11)(eslint@9.9.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)
+        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/497e1c5bb148f285e0095d58b5a1b4d77a7f27d9(@types/eslint@8.56.11)(eslint@9.9.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.3.3)
@@ -909,11 +909,11 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/roboto-condensed@5.0.3':
-    resolution: {integrity: sha512-0GjOjaNXe+dv1pUqciPlTFZi1Z96nIz8RSRn4qn35cMROcdSnuYa2+BTngr1w0oX53HSVCxWL7AAYg7tD2Wfxw==}
+  '@fontsource-variable/roboto-condensed@5.0.4':
+    resolution: {integrity: sha512-lnigWwaFaxB4UtmQy91CQj1Rh0wNClATsrqVbCYzkkdY9CdDeuQmkA43jQRK2/Y1Jgtq2JV3lojGfTqLtouwAg==}
 
-  '@fontsource-variable/roboto-slab@5.0.20':
-    resolution: {integrity: sha512-P+SYnhWntwbguWtOp9GkT3fDRN/E09NGNEBMCehhp+K+jctha00h7rn+G0IGJqUcifWZwEWBIFPFVy1ml8bjvQ==}
+  '@fontsource-variable/roboto-slab@5.0.21':
+    resolution: {integrity: sha512-Oz8z5GrcUbWEOrQ3/7TcDhoVkpY9HINamRqY6FFSeRCEscLqhxcw7oMkjKM+ezcMnCVp6lhJ4rvNbu/AMjNkgQ==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1205,8 +1205,8 @@ packages:
     peerDependencies:
       cspell: ^8.13.0
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/c77c5b2091346d806c5679b1180a1ad853c92f9e':
-    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/c77c5b2091346d806c5679b1180a1ad853c92f9e}
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/497e1c5bb148f285e0095d58b5a1b4d77a7f27d9':
+    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/497e1c5bb148f285e0095d58b5a1b4d77a7f27d9}
     version: 2.0.0
     engines: {node: '>=20', pnpm: '>=9'}
     peerDependencies:
@@ -4193,9 +4193,9 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@fontsource-variable/roboto-condensed@5.0.3': {}
+  '@fontsource-variable/roboto-condensed@5.0.4': {}
 
-  '@fontsource-variable/roboto-slab@5.0.20': {}
+  '@fontsource-variable/roboto-slab@5.0.21': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -4546,7 +4546,7 @@ snapshots:
       '@cspell/dict-de-de': 4.0.0
       cspell: 8.13.3
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/c77c5b2091346d806c5679b1180a1ad853c92f9e(@types/eslint@8.56.11)(eslint@9.9.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)':
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/497e1c5bb148f285e0095d58b5a1b4d77a7f27d9(@types/eslint@8.56.11)(eslint@9.9.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)':
     dependencies:
       '@cspell/eslint-plugin': 8.13.1(eslint@9.9.0(jiti@1.21.6))
       '@eslint/js': 9.8.0
