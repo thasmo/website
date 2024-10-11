@@ -29,7 +29,7 @@ importers:
         version: 19.5.0(@types/node@20.16.11)(typescript@5.6.3)
       '@cspell/dict-de-de':
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.0.3
       '@pandacss/dev':
         specifier: ^0.46.0
         version: 0.46.1(typescript@5.6.3)
@@ -290,8 +290,8 @@ packages:
   '@cspell/dict-data-science@2.0.1':
     resolution: {integrity: sha512-xeutkzK0eBe+LFXOFU2kJeAYO6IuFUc1g7iRLr7HeCmlC4rsdGclwGHh61KmttL3+YHQytYStxaRBdGAXWC8Lw==}
 
-  '@cspell/dict-de-de@4.0.0':
-    resolution: {integrity: sha512-MLRMRy44xdjtBLW2jqO73RTbnNfSLztK/mG1/LSblY4hpWxc6iJBAVA7hQye8m06sde6FHgnP38x+jgql/6q6A==}
+  '@cspell/dict-de-de@4.0.3':
+    resolution: {integrity: sha512-HxoPd3ra/gHVeUKq9NMCX5gOHpaL9lyhHQi/2CXBrSE7yrB5cusrPoKFh+xYGI1hG8rrrPLLDKF+vbB66YR4/A==}
 
   '@cspell/dict-django@4.1.0':
     resolution: {integrity: sha512-bKJ4gPyrf+1c78Z0Oc4trEB9MuhcB+Yg+uTTWsvhY6O2ncFYbB/LbEZfqhfmmuK/XJJixXfI1laF2zicyf+l0w==}
@@ -3922,7 +3922,7 @@ snapshots:
 
   '@cspell/dict-data-science@2.0.1': {}
 
-  '@cspell/dict-de-de@4.0.0': {}
+  '@cspell/dict-de-de@4.0.3': {}
 
   '@cspell/dict-django@4.1.0': {}
 
@@ -4698,7 +4698,7 @@ snapshots:
 
   '@somehow-digital/cspell-dictionary@1.0.0(cspell@8.14.4)':
     dependencies:
-      '@cspell/dict-de-de': 4.0.0
+      '@cspell/dict-de-de': 4.0.3
       cspell: 8.14.4
 
   '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/e87b44b3c8275afd583ba85aa1012f69120df903(@types/eslint@8.56.11)(eslint@9.12.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)':
