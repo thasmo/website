@@ -38,7 +38,7 @@ importers:
         version: 1.0.0(cspell@8.15.2)
       '@somehow-digital/eslint-config':
         specifier: github:somehow-digital/eslint-config
-        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/fbcc96cbf97361a0789bfd7078dbb57fd8e66877(@types/eslint@8.56.11)(eslint@9.13.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)
+        version: git+https://git@github.com:somehow-digital/eslint-config.git#07a19585aeeb5763d91cae9eebcf3b7801561dc1(@types/eslint@8.56.11)(eslint@9.13.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.3.3)
@@ -1366,8 +1366,8 @@ packages:
     peerDependencies:
       cspell: ^8.13.0
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/fbcc96cbf97361a0789bfd7078dbb57fd8e66877':
-    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/fbcc96cbf97361a0789bfd7078dbb57fd8e66877}
+  '@somehow-digital/eslint-config@git+https://git@github.com:somehow-digital/eslint-config.git#07a19585aeeb5763d91cae9eebcf3b7801561dc1':
+    resolution: {commit: 07a19585aeeb5763d91cae9eebcf3b7801561dc1, repo: git@github.com:somehow-digital/eslint-config.git, type: git}
     version: 2.0.0
     engines: {node: '>=20', pnpm: '>=9'}
     peerDependencies:
@@ -3185,8 +3185,8 @@ packages:
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
-  rollup@3.29.4:
-    resolution: {integrity: sha512-oWzmBZwvYrU0iJHtDmhsm662rC15FRXmcjCk1xD771dFDx5jJ02ufAQQTn0etB2emNk4J9EZg/yWKpsn9BWGRw==}
+  rollup@3.29.5:
+    resolution: {integrity: sha512-GVsDdsbJzzy4S/v3dqWPJ7EfvZJfCHiDqe80IyrF59LYuP+e6U1LJoUqeuqRbwAWoMNoXivMNeNAOf5E22VA1w==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -4882,7 +4882,7 @@ snapshots:
       '@cspell/dict-de-de': 4.0.0
       cspell: 8.15.2
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/fbcc96cbf97361a0789bfd7078dbb57fd8e66877(@types/eslint@8.56.11)(eslint@9.13.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)':
+  '@somehow-digital/eslint-config@git+https://git@github.com:somehow-digital/eslint-config.git#07a19585aeeb5763d91cae9eebcf3b7801561dc1(@types/eslint@8.56.11)(eslint@9.13.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)':
     dependencies:
       '@cspell/eslint-plugin': 8.13.1(eslint@9.13.0(jiti@1.21.6))
       '@eslint/js': 9.8.0
@@ -7029,7 +7029,7 @@ snapshots:
 
   rfdc@1.4.1: {}
 
-  rollup@3.29.4:
+  rollup@3.29.5:
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -7417,7 +7417,7 @@ snapshots:
     dependencies:
       esbuild: 0.18.20
       postcss: 8.4.47
-      rollup: 3.29.4
+      rollup: 3.29.5
     optionalDependencies:
       '@types/node': 20.16.11
       fsevents: 2.3.3
