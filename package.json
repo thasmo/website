@@ -1,10 +1,11 @@
 {
 	"private": true,
 	"type": "module",
-	"engines": {
-		"node": "^20"
-	},
 	"packageManager": "pnpm@9.12.3",
+	"engines": {
+		"node": ">=22",
+		"pnpm": ">=9"
+	},
 	"scripts": {
 		"build": "qwik build",
 		"build.client": "vite build",
@@ -33,6 +34,10 @@
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik"
 	},
+	"dependencies": {
+		"@fontsource-variable/roboto-condensed": "^5.0.2",
+		"@fontsource-variable/roboto-slab": "^5.0.19"
+	},
 	"devDependencies": {
 		"@builder.io/qwik": "^1.5.1",
 		"@builder.io/qwik-city": "^1.5.1",
@@ -59,9 +64,5 @@
 	},
 	"trustedDependencies": [
 		"sharp"
-	],
-	"dependencies": {
-		"@fontsource-variable/roboto-condensed": "^5.0.2",
-		"@fontsource-variable/roboto-slab": "^5.0.19"
-	}
+	]
 }
