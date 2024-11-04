@@ -49,7 +49,7 @@
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
 		"@somehow-digital/prettier-config": "^2.0.0",
 		"@somehow-digital/typescript-config": "^2.0.0",
-		"@types/node": "^20.11.25",
+		"@types/node": "^22.0.0",
 		"autoprefixer": "^10.4.18",
 		"concurrently": "^9.0.0",
 		"cspell": "^8.6.0",
