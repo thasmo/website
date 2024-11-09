@@ -38,7 +38,7 @@ importers:
         version: 1.0.0(cspell@8.16.0)
       '@somehow-digital/eslint-config':
         specifier: github:somehow-digital/eslint-config
-        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/ccdfeecedd3703e86a4cf483d176760cb83e13b8(@types/eslint@8.56.11)(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)
+        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/6ed336be7a73aa81361bf793a34534703837bfca(@types/eslint@8.56.11)(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)
       '@somehow-digital/prettier-config':
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.3.3)
@@ -80,7 +80,7 @@ importers:
         version: 5.4.10(@types/node@22.9.0)(lightningcss@1.25.1)
       vite-tsconfig-paths:
         specifier: ^5.0.0
-        version: 5.1.0(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(lightningcss@1.25.1))
+        version: 5.1.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(lightningcss@1.25.1))
 
 packages:
 
@@ -1232,8 +1232,8 @@ packages:
     peerDependencies:
       cspell: ^8.13.0
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/ccdfeecedd3703e86a4cf483d176760cb83e13b8':
-    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/ccdfeecedd3703e86a4cf483d176760cb83e13b8}
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/6ed336be7a73aa81361bf793a34534703837bfca':
+    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/6ed336be7a73aa81361bf793a34534703837bfca}
     version: 2.0.0
     engines: {node: '>=20', pnpm: '>=9'}
     peerDependencies:
@@ -3395,8 +3395,8 @@ packages:
     engines: {node: '>=v14.18.0'}
     hasBin: true
 
-  vite-tsconfig-paths@5.1.0:
-    resolution: {integrity: sha512-Y1PLGHCJfAq1Zf4YIGEsmuU/NCX1epoZx9zwSr32Gjn3aalwQHRKr5aUmbo6r0JHeHkqmWpmDg7WOynhYXw1og==}
+  vite-tsconfig-paths@5.1.1:
+    resolution: {integrity: sha512-0nLY3qQI4GlYw3We4rps16ntW+nAZYCUrJwsuvqxIUCY9Bk3VnSeJDm/VPCmjOcAJ9Kud4k+CK2ZEnf9pbzK9Q==}
     peerDependencies:
       vite: '*'
     peerDependenciesMeta:
@@ -4648,7 +4648,7 @@ snapshots:
       '@cspell/dict-de-de': 4.0.0
       cspell: 8.16.0
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/ccdfeecedd3703e86a4cf483d176760cb83e13b8(@types/eslint@8.56.11)(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)':
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/6ed336be7a73aa81361bf793a34534703837bfca(@types/eslint@8.56.11)(eslint@9.14.0(jiti@1.21.6))(prettier@3.3.3)(typescript@5.6.3)':
     dependencies:
       '@cspell/eslint-plugin': 8.13.1(eslint@9.14.0(jiti@1.21.6))
       '@eslint/js': 9.8.0
@@ -7171,7 +7171,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@5.1.0(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(lightningcss@1.25.1)):
+  vite-tsconfig-paths@5.1.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(lightningcss@1.25.1)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
