@@ -12,12 +12,14 @@ export default component$(() => {
 			<title>{head.title}</title>
 
 			<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+			<meta content="@thasmo@mastodon.social" name="fediverse:creator" />
 
 			{head.meta.map((meta) => (
 				<meta key={meta.key} {...meta} />
 			))}
 
 			<link href="https://avatar.thasmo.com/favicon.ico" rel="icon" />
+			<link href="https://mastodon.social/@thasmo" rel="me" />
 			<link href="/manifest.json" rel="manifest" />
 			<link href={location.url.href} rel="canonical" />
 
