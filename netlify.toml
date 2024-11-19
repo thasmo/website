@@ -14,7 +14,7 @@ X-Frame-Options = "DENY"
 X-Content-Type-Options = "nosniff"
 
 [[redirects]]
-from = "https://thasmo.streamm/*"
+from = "https://thasmo.stream/*"
 to = "https://twitch.tv/thasmo"
 status = 301
 force = true
