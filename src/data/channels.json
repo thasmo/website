@@ -8,12 +8,12 @@
 		"color": "#000"
 	},
 	{
-		"type": "twitter",
-		"title": "X",
-		"label": "Follow me on X.",
-		"address": "https://x.com/thomasdeinhamer",
+		"type": "bluesky",
+		"title": "Bluesky",
+		"label": "Follow me on Bluesky.",
+		"address": "https://bsky.app/profile/thasmo.com",
 		"primary": true,
-		"color": "#000"
+		"color": "#208bfe"
 	},
 	{
 		"type": "stackoverflow",
