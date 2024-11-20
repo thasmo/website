@@ -4,11 +4,11 @@ import Headline from '~/components/headline/headline';
 
 import * as styles from './project.styles';
 
-export type ProjectProperties = {
+export type ProjectProperties = PropsOf<'article'> & {
 	address: string;
 	description?: string;
 	name: string;
-} & PropsOf<'article'>;
+};
 
 export default component$<ProjectProperties>(
 	({ address, description, name, ...properties }) => {

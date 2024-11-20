@@ -3,11 +3,11 @@ import { component$, type PropsOf } from '@builder.io/qwik';
 import Channel from '../icons/channel';
 import * as styles from './contact.styles';
 
-export type ContactProperties = {
+export type ContactProperties = PropsOf<'a'> & {
 	address: string;
 	label: string;
 	type: string;
-} & PropsOf<'a'>;
+};
 
 export default component$<ContactProperties>(
 	({ address, label, type, ...properties }) => {

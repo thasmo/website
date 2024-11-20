@@ -2,9 +2,9 @@ import { component$, type PropsOf, type Signal, Slot } from '@builder.io/qwik';
 
 import * as styles from './panel.styles';
 
-export type PanelProperties = {
+export type PanelProperties = PropsOf<'main'> & {
 	isActive: Signal<boolean>;
-} & PropsOf<'main'>;
+};
 
 export default component$<PanelProperties>(({ isActive, ...properties }) => {
 	return (

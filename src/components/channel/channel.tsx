@@ -4,13 +4,13 @@ import Channel from '~/components/icons/channel';
 
 import * as styles from './channel.styles';
 
-export type ChannelProperties = {
+export type ChannelProperties = PropsOf<'a'> & {
 	address: string;
 	color: string;
 	primary?: boolean;
 	title: string;
 	type: string;
-} & PropsOf<'a'>;
+};
 
 export default component$<ChannelProperties>(
 	({ address, class: classes, color, title, type, ...properties }) => {

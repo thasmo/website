@@ -4,9 +4,9 @@ import Headline from '~/components/headline/headline';
 
 import * as styles from './section.styles';
 
-export type SectionProperties = {
+export type SectionProperties = PropsOf<'section'> & {
 	title: string;
-} & PropsOf<'section'>;
+};
 
 export default component$<SectionProperties>(({ title, ...properties }) => {
 	return (

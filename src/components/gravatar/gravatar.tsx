@@ -9,10 +9,10 @@ import { generateHash } from '~/components/gravatar/gravatar.utilities';
 
 import * as styles from './gravatar.styles';
 
-export type GravatarProperties = {
+export type GravatarProperties = PropsOf<'img'> & {
 	email: string;
 	size: number;
-} & PropsOf<'img'>;
+};
 
 export default component$<GravatarProperties>(
 	({ email, size, ...properties }) => {

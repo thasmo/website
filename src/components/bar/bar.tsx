@@ -11,11 +11,11 @@ import PanelOpen from '~/components/icons/panel-open';
 
 import * as styles from './bar.styles';
 
-export type BarProperties = {
+export type BarProperties = PropsOf<'aside'> & {
 	channels: ChannelProperties[];
 	isActive: Signal<boolean>;
 	onToggle: QRL<(event?: Event) => boolean>;
-} & PropsOf<'aside'>;
+};
 
 export default component$<BarProperties>(
 	({ channels, isActive, onToggle, ...properties }) => {
