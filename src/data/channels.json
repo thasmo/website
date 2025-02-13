@@ -2,7 +2,7 @@
 	{
 		"type": "email",
 		"title": "Email",
-		"label": "Write me an email.",
+		"label": "Send me an email.",
 		"address": "mailto:hi@thasmo.com",
 		"primary": false,
 		"color": "#000"
