@@ -44,7 +44,7 @@ importers:
         version: 2.0.0(prettier@3.5.0)
       '@somehow-digital/typescript-config':
         specifier: ^2.0.0
-        version: 2.0.0(typescript@5.7.3)
+        version: 2.5.0(typescript@5.7.3)
       '@types/node':
         specifier: ^22.0.0
         version: 22.13.2
@@ -1235,9 +1235,9 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  '@somehow-digital/typescript-config@2.0.0':
-    resolution: {integrity: sha512-AgsonVqwjm4dX6dhguE2EyuaFPRk5dLFqtPNIW2Xr5zvd3X1Ay9g3MCKZW1DDRzPKlArEppJ/OKAhKDHP7Ubwg==}
-    engines: {node: '>=20', pnpm: '>=9'}
+  '@somehow-digital/typescript-config@2.5.0':
+    resolution: {integrity: sha512-4hMvxV4vtr1hDPeDQXSbRZgblrT4mrQVAbLygm/zG0uaK7wuFxLhAhnINOiaNGUEfz5rL3nNCP27zUnOOXCYRg==}
+    engines: {node: '>=22', pnpm: '>=9'}
     peerDependencies:
       typescript: ^5.4.5
 
@@ -4449,7 +4449,7 @@ snapshots:
     dependencies:
       prettier: 3.5.0
 
-  '@somehow-digital/typescript-config@2.0.0(typescript@5.7.3)':
+  '@somehow-digital/typescript-config@2.5.0(typescript@5.7.3)':
     dependencies:
       typescript: 5.7.3
 
