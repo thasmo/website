@@ -27,17 +27,19 @@ export default component$<GravatarProperties>(
 		});
 
 		return (
-			<div class={styles.gravatar}>
-				<img
-					class={styles.image}
-					decoding="async"
-					height={size}
-					src={low.value}
-					srcset={`${low.value} 1x, ${high.value} 2x`}
-					width={size}
-					{...properties}
-				/>
-			</div>
+			low.value && (
+				<div class={styles.gravatar}>
+					<img
+						class={styles.image}
+						decoding="async"
+						height={size}
+						src={low.value}
+						srcset={`${low.value} 1x, ${high.value} 2x`}
+						width={size}
+						{...properties}
+					/>
+				</div>
+			)
 		);
 	},
 );
