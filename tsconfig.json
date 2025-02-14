@@ -1,8 +1,6 @@
 {
-	"extends": "@somehow-digital/typescript-config",
+	"extends": "@somehow-digital/typescript-config/qwik",
 	"compilerOptions": {
-		"jsx": "react-jsx",
-		"jsxImportSource": "@builder.io/qwik",
 		"paths": {
 			"~/*": ["./src/*"]
 		}
