@@ -6,6 +6,12 @@
 		"node": ">=22",
 		"pnpm": ">=10"
 	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild",
+			"sharp"
+		]
+	},
 	"scripts": {
 		"build": "qwik build",
 		"build.client": "vite build",
@@ -61,8 +67,5 @@
 		"undici": "^7.0.0",
 		"vite": "^6.0.0",
 		"vite-tsconfig-paths": "^5.0.0"
-	},
-	"trustedDependencies": [
-		"sharp"
-	]
+	}
 }
