@@ -38,6 +38,18 @@ status = 301
 force = true
 
 [[redirects]]
+from = "https://thasmo.email/*"
+to = "https://thasmo.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.thasmo.email/*"
+to = "https://thasmo.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
 from = "https://deinhamer.at/*"
 to = "https://thasmo.com/:splat"
 status = 301
