@@ -1,9 +1,4 @@
-import {
-	component$,
-	type PropsOf,
-	useSignal,
-	useTask$,
-} from '@builder.io/qwik';
+import { component$, type PropsOf, useSignal, useTask$ } from '@builder.io/qwik';
 
 import { generateHash } from '~/components/gravatar/gravatar.utilities';
 
@@ -14,32 +9,30 @@ export type GravatarProperties = PropsOf<'img'> & {
 	size: number;
 };
 
-export default component$<GravatarProperties>(
-	({ email, size, ...properties }) => {
-		const low = useSignal<string>();
-		const high = useSignal<string>();
+export default component$<GravatarProperties>(({ email, size, ...properties }) => {
+	const low = useSignal<string>();
+	const high = useSignal<string>();
 
-		useTask$(async () => {
-			const hash = await generateHash(email);
+	useTask$(async () => {
+		const hash = await generateHash(email);
 
-			low.value = `https://avatar.thasmo.com/${hash}/${size}`;
-			high.value = `https://avatar.thasmo.com/${hash}/${size * 2}`;
-		});
+		low.value = `https://avatar.thasmo.com/${hash}/${size}`;
+		high.value = `https://avatar.thasmo.com/${hash}/${size * 2}`;
+	});
 
-		return (
-			low.value && (
-				<div class={styles.gravatar}>
-					<img
-						class={styles.image}
-						decoding="async"
-						height={size}
-						src={low.value}
-						srcset={`${low.value} 1x, ${high.value} 2x`}
-						width={size}
-						{...properties}
-					/>
-				</div>
-			)
-		);
-	},
-);
+	return (
+		low.value && (
+			<div class={styles.gravatar}>
+				<img
+					class={styles.image}
+					decoding="async"
+					height={size}
+					src={low.value}
+					srcset={`${low.value} 1x, ${high.value} 2x`}
+					width={size}
+					{...properties}
+				/>
+			</div>
+		)
+	);
+});

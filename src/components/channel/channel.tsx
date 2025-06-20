@@ -12,18 +12,16 @@ export type ChannelProperties = PropsOf<'a'> & {
 	type: string;
 };
 
-export default component$<ChannelProperties>(
-	({ address, class: classes, color, title, type, ...properties }) => {
-		return (
-			<a
-				class={[styles.channel, classes]}
-				href={address}
-				rel="me noopener"
-				style={`--color: ${color};`}
-				title={title}
-				{...properties}>
-				<Channel type={type} />
-			</a>
-		);
-	},
-);
+export default component$<ChannelProperties>(({ address, class: classes, color, title, type, ...properties }) => {
+	return (
+		<a
+			class={[styles.channel, classes]}
+			href={address}
+			rel="me noopener"
+			style={`--color: ${color};`}
+			title={title}
+			{...properties}>
+			<Channel type={type} />
+		</a>
+	);
+});

@@ -28,11 +28,7 @@ export default component$(() => {
 			))}
 
 			{head.styles.map((style) => (
-				<style
-					key={style.key}
-					{...style.props}
-					dangerouslySetInnerHTML={style.style}
-				/>
+				<style key={style.key} {...style.props} dangerouslySetInnerHTML={style.style} />
 			))}
 		</>
 	);

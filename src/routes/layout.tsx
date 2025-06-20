@@ -1,12 +1,6 @@
 import type { RequestHandler } from '@builder.io/qwik-city';
 
-import {
-	$,
-	component$,
-	Slot,
-	useOnDocument,
-	useSignal,
-} from '@builder.io/qwik';
+import { $, component$, Slot, useOnDocument, useSignal } from '@builder.io/qwik';
 import '@fontsource-variable/roboto-condensed/wght.css';
 import '@fontsource-variable/roboto-slab/wght.css';
 
@@ -38,10 +32,7 @@ export default component$(() => {
 	useOnDocument(
 		'click',
 		$((event) => {
-			if (
-				!panel.value?.contains(event.target as Node) &&
-				!bar.value?.contains(event.target as Node)
-			) {
+			if (!panel.value?.contains(event.target as Node) && !bar.value?.contains(event.target as Node)) {
 				isActive.value = false;
 			}
 		}),
@@ -85,22 +76,13 @@ export default component$(() => {
 				<Section title="Contact">
 					{channels.map((channel) => (
 						<p key={channel.type}>
-							<Contact
-								address={channel.address}
-								label={channel.label}
-								type={channel.type}
-							/>
+							<Contact address={channel.address} label={channel.label} type={channel.type} />
 						</p>
 					))}
 				</Section>
 			</Panel>
 
-			<Bar
-				channels={channels}
-				isActive={isActive}
-				onToggle={$(() => (isActive.value = !isActive.value))}
-				ref={bar}
-			/>
+			<Bar channels={channels} isActive={isActive} onToggle={$(() => (isActive.value = !isActive.value))} ref={bar} />
 		</Stage>
 	);
 });
