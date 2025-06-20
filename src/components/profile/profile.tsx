@@ -12,22 +12,11 @@ export default component$<ProfileProperties>(({ ...properties }) => {
 		<div class={styles.profile} {...properties}>
 			<figure class={styles.figure}>
 				<span class={styles.link}>
-					<Gravatar
-						alt={`Photo of ${profile.name}`}
-						email={profile.email}
-						size={256}
-					/>
+					<Gravatar alt={`Photo of ${profile.name}`} email={profile.email} size={256} />
 				</span>
 
-				<a
-					class={styles.employer}
-					href={profile.employer.website}
-					rel="noopener">
-					<Gravatar
-						alt={`Photo of ${profile.employer.name}`}
-						email={profile.employer.email}
-						size={72}
-					/>
+				<a class={styles.employer} href={profile.employer.website} rel="noopener">
+					<Gravatar alt={`Photo of ${profile.employer.name}`} email={profile.employer.email} size={72} />
 				</a>
 			</figure>
 		</div>

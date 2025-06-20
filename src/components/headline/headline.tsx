@@ -8,23 +8,19 @@ export type HeadlineProperties = PropsOf<'div'> &
 		tag?: string;
 	};
 
-export default component$<HeadlineProperties>(
-	({ level = 1, tag, ...properties }) => {
-		const Headline = tag || `h${level}`;
-		const [styleProperties, componentProperties] = headline.splitVariantProps({
-			level,
-			...properties,
-		});
+export default component$<HeadlineProperties>(({ level = 1, tag, ...properties }) => {
+	const Headline = tag || `h${level}`;
 
-		componentProperties.class = cx(
-			headline(styleProperties),
-			componentProperties.class as string,
-		);
+	const [styleProperties, componentProperties] = headline.splitVariantProps({
+		level,
+		...properties,
+	});
 
-		return (
-			<Headline {...componentProperties}>
-				<Slot />
-			</Headline>
-		);
-	},
-);
+	componentProperties.class = cx(headline(styleProperties), componentProperties.class as string);
+
+	return (
+		<Headline {...componentProperties}>
+			<Slot />
+		</Headline>
+	);
+});

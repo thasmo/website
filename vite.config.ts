@@ -6,12 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig((): UserConfig => {
 	return {
-		plugins: [
-			macroPlugin({ preset: 'pandacss' }),
-			qwikCity(),
-			qwikVite(),
-			tsconfigPaths(),
-		],
+		plugins: [macroPlugin({ preset: 'pandacss' }), qwikCity(), qwikVite(), tsconfigPaths()],
 		preview: {
 			headers: {
 				'Cache-Control': 'public, max-age=600',
