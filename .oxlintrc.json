@@ -1,0 +1,13 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"categories": {
+		"correctness": "off",
+		"suspicious": "off",
+		"pedantic": "error",
+		"perf": "off",
+		"style": "off",
+		"restriction": "off",
+		"nursery": "off"
+	},
+	"ignorePatterns": [".git/", ".idea/", ".husky/", "src/styles/", "dist/", "server/"]
+}
