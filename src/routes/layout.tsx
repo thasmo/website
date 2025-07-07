@@ -17,13 +17,14 @@ import projects from '~/data/projects.json';
 
 import * as styles from './layout.styles';
 
-export const onGet: RequestHandler = async ({ cacheControl }) => {
+export const onGet: RequestHandler = ({ cacheControl }) => {
 	cacheControl({
 		maxAge: 5,
 		staleWhileRevalidate: 60 * 60 * 24 * 7,
 	});
 };
 
+// oxlint-disable-next-line max-lines-per-function
 export default component$(() => {
 	const bar = useSignal<Element>();
 	const panel = useSignal<Element>();
