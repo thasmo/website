@@ -8,6 +8,14 @@
 		"color": "#000"
 	},
 	{
+		"type": "resume",
+		"title": "Resume",
+		"label": "View my resume (CV).",
+		"address": "https://resume.thasmo.com",
+		"primary": false,
+		"color": "#000"
+	},
+	{
 		"type": "bluesky",
 		"title": "Bluesky",
 		"label": "Follow me on Bluesky.",
