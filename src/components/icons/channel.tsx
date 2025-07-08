@@ -4,6 +4,7 @@ import Bluesky from '~/components/icons/channels/bluesky';
 import Email from '~/components/icons/channels/email';
 import GitHub from '~/components/icons/channels/github';
 import LinkedIn from '~/components/icons/channels/linkedin';
+import Resume from '~/components/icons/channels/resume';
 import StackOverflow from '~/components/icons/channels/stackoverflow';
 import Xing from '~/components/icons/channels/xing';
 
@@ -27,6 +28,10 @@ export default component$<ChannelProperties>(({ type, ...properties }) => {
 
 		case 'linkedin': {
 			return <LinkedIn {...properties} />;
+		}
+
+		case 'resume': {
+			return <Resume {...properties} />;
 		}
 
 		case 'stackoverflow': {
