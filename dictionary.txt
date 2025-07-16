@@ -4,3 +4,4 @@ gridable
 gaoo
 fediverse
 bluesky
+oxlint
