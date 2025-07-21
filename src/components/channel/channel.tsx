@@ -1,7 +1,6 @@
-import { component$, type PropsOf } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import Channel from '~/components/icons/channel';
-
 import * as styles from './channel.styles';
 
 export type ChannelProperties = PropsOf<'a'> & {
@@ -20,7 +19,8 @@ export default component$<ChannelProperties>(({ address, class: classes, color, 
 			rel="me noopener"
 			style={`--color: ${color};`}
 			title={title}
-			{...properties}>
+			{...properties}
+		>
 			<Channel type={type} />
 		</a>
 	);

@@ -1,5 +1,5 @@
-import { component$, type PropsOf } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import Bluesky from '~/components/icons/channels/bluesky';
 import Email from '~/components/icons/channels/email';
 import GitHub from '~/components/icons/channels/github';

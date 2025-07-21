@@ -1,7 +1,6 @@
-import { component$, type PropsOf } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import Headline from '~/components/headline/headline';
-
 import * as styles from './project.styles';
 
 export type ProjectProperties = PropsOf<'article'> & {

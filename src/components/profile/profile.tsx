@@ -1,8 +1,7 @@
-import { component$, type PropsOf } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import Gravatar from '~/components/gravatar/gravatar';
 import profile from '~/data/profile.json';
-
 import * as styles from './profile.styles';
 
 export type ProfileProperties = PropsOf<'div'>;

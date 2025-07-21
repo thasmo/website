@@ -14,7 +14,7 @@ export default component$(() => {
 			<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 			<meta content="@thasmo@mastodon.social" name="fediverse:creator" />
 
-			{head.meta.map((meta) => (
+			{head.meta.map(meta => (
 				<meta key={meta.key} {...meta} />
 			))}
 
@@ -23,11 +23,11 @@ export default component$(() => {
 			<link href="/manifest.json" rel="manifest" />
 			<link href={location.url.href} rel="canonical" />
 
-			{head.links.map((link) => (
+			{head.links.map(link => (
 				<link key={link.key} {...link} />
 			))}
 
-			{head.styles.map((style) => (
+			{head.styles.map(style => (
 				<style key={style.key} {...style.props} dangerouslySetInnerHTML={style.style} />
 			))}
 		</>

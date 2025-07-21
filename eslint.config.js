@@ -1,14 +1,3 @@
-import config from '@somehow-digital/eslint-config/typescript';
+import config from '@somehow-digital/eslint-config';
 
-export default [
-	...config,
-	{
-		ignores: ['src/styles/', 'dist/', 'server/', 'tmp/'],
-	},
-	{
-		rules: {
-			'unicorn/no-null': 'off',
-			'unicorn/prevent-abbreviations': 'off',
-		},
-	},
-];
+export default config();

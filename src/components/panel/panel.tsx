@@ -1,5 +1,5 @@
-import { component$, type PropsOf, type Signal, Slot } from '@builder.io/qwik';
-
+import type { PropsOf, Signal } from '@builder.io/qwik';
+import { component$, Slot } from '@builder.io/qwik';
 import * as styles from './panel.styles';
 
 export type PanelProperties = PropsOf<'main'> & {

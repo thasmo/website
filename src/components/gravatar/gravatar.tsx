@@ -1,7 +1,6 @@
-import { component$, type PropsOf, useSignal, useTask$ } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$, useSignal, useTask$ } from '@builder.io/qwik';
 import { generateHash } from '~/components/gravatar/gravatar.utilities';
-
 import * as styles from './gravatar.styles';
 
 export type GravatarProperties = PropsOf<'img'> & {

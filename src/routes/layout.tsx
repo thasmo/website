@@ -1,9 +1,7 @@
 import type { RequestHandler } from '@builder.io/qwik-city';
-
 import { $, component$, Slot, useOnDocument, useSignal } from '@builder.io/qwik';
 import '@fontsource-variable/roboto-condensed/wght.css';
 import '@fontsource-variable/roboto-slab/wght.css';
-
 import Bar from '~/components/bar/bar';
 import Contact from '~/components/contact/contact';
 import Headline from '~/components/headline/headline';
@@ -14,7 +12,6 @@ import Stage from '~/components/stage/stage';
 import channels from '~/data/channels.json';
 import profile from '~/data/profile.json';
 import projects from '~/data/projects.json';
-
 import * as styles from './layout.styles';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -50,7 +47,11 @@ export default component$(() => {
 
 					<p>
 						<b>
-							{profile.position} from {profile.location},
+							{profile.position}
+							{' '}
+							from
+							{profile.location}
+							,
 						</b>
 						<wbr />
 						pushing the web's boundaries at
@@ -63,7 +64,7 @@ export default component$(() => {
 				</header>
 
 				<Section title="Side Projects">
-					{projects.map((project) => (
+					{projects.map(project => (
 						<Project
 							address={project.address}
 							description={project.description}
@@ -74,7 +75,7 @@ export default component$(() => {
 				</Section>
 
 				<Section title="Contact">
-					{channels.map((channel) => (
+					{channels.map(channel => (
 						<p key={channel.type}>
 							<Contact address={channel.address} label={channel.label} type={channel.type} />
 						</p>

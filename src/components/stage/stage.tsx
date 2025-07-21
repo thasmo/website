@@ -1,5 +1,5 @@
-import { component$, type PropsOf, Slot } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$, Slot } from '@builder.io/qwik';
 import * as styles from './stage.styles';
 
 export type StageProperties = PropsOf<'div'>;

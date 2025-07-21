@@ -1,9 +1,9 @@
-import { component$, type PropsOf, type QRL, type Signal } from '@builder.io/qwik';
-
-import Channel, { type ChannelProperties } from '~/components/channel/channel';
+import type { PropsOf, QRL, Signal } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
+import type { ChannelProperties } from '~/components/channel/channel';
+import Channel from '~/components/channel/channel';
 import PanelClose from '~/components/icons/panel-close';
 import PanelOpen from '~/components/icons/panel-open';
-
 import * as styles from './bar.styles';
 
 export type BarProperties = PropsOf<'aside'> & {
@@ -17,8 +17,8 @@ export default component$<BarProperties>(({ channels, isActive, onToggle, ...pro
 		<aside class={styles.bar} data-active={isActive.value} {...properties}>
 			<p class={[styles.social, 'group']} data-active={isActive.value}>
 				{channels
-					.filter((channel) => channel.primary)
-					.map((channel) => (
+					.filter(channel => channel.primary)
+					.map(channel => (
 						<Channel
 							address={channel.address}
 							class={styles.channel}
@@ -36,7 +36,8 @@ export default component$<BarProperties>(({ channels, isActive, onToggle, ...pro
 					data-active={isActive.value}
 					onClick$={() => onToggle()}
 					title="more information"
-					type="button">
+					type="button"
+				>
 					<PanelOpen />
 				</button>
 			)}
@@ -47,7 +48,8 @@ export default component$<BarProperties>(({ channels, isActive, onToggle, ...pro
 					data-active={isActive.value}
 					onClick$={() => onToggle()}
 					title="less information"
-					type="button">
+					type="button"
+				>
 					<PanelClose />
 				</button>
 			)}

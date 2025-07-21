@@ -1,5 +1,5 @@
-import { component$, type PropsOf } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import Channel from '../icons/channel';
 import * as styles from './contact.styles';
 

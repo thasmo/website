@@ -1,7 +1,6 @@
-import { component$, type PropsOf, Slot } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$, Slot } from '@builder.io/qwik';
 import Headline from '~/components/headline/headline';
-
 import * as styles from './section.styles';
 
 export type SectionProperties = PropsOf<'section'> & {
