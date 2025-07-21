@@ -1,10 +1,11 @@
-import { component$, type PropsOf, Slot } from '@builder.io/qwik';
-
+import type { PropsOf } from '@builder.io/qwik';
+import { component$, Slot } from '@builder.io/qwik';
+import type { RecipeVariantProps } from '~/styles/css';
 import { headline } from '~/components/headline/headline.styles';
-import { cx, type RecipeVariantProps } from '~/styles/css';
+import { cx } from '~/styles/css';
 
-export type HeadlineProperties = PropsOf<'div'> &
-	RecipeVariantProps<typeof headline> & {
+export type HeadlineProperties = PropsOf<'div'>
+	& RecipeVariantProps<typeof headline> & {
 		tag?: string;
 	};
 

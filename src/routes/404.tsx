@@ -1,7 +1,5 @@
 import type { DocumentHead } from '@builder.io/qwik-city';
-
 import { component$ } from '@builder.io/qwik';
-
 import Profile from '~/components/profile/profile';
 import profile from '~/data/profile.json';
 
