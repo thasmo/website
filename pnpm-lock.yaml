@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fontsource-variable/roboto-condensed':
         specifier: ^5.0.2
-        version: 5.2.6
+        version: 5.2.7
       '@fontsource-variable/roboto-slab':
         specifier: ^5.0.19
-        version: 5.2.6
+        version: 5.2.7
     devDependencies:
       '@builder.io/qwik':
         specifier: ^1.5.1
@@ -886,11 +886,11 @@ packages:
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/roboto-condensed@5.2.6':
-    resolution: {integrity: sha512-blT+h4xyLEsQJZzvkDAmCb5Bt9D8SVSq8l4Al+IWFX1x6fqHj5Y6cqwza65xvAWYsRyI3uJtsrfCTum9IyccZA==}
+  '@fontsource-variable/roboto-condensed@5.2.7':
+    resolution: {integrity: sha512-lyfFgbKySdYjS9Bv8o/NLkNr6q26XDD31WR0s6HcAPCr9VQt86+5edsASbl452GcizUwy0oHjha5lkdsESqpwg==}
 
-  '@fontsource-variable/roboto-slab@5.2.6':
-    resolution: {integrity: sha512-+Kz8D4cMh2ndwFOeZcFKAHnhZbFWslCmMI9QTy3uLocVkFyj30MriUmDphuiZPvBuEnotsVTZjjGMHyuM6nckQ==}
+  '@fontsource-variable/roboto-slab@5.2.7':
+    resolution: {integrity: sha512-adjPRH5FnODKCRXs5D05z8YRkSUyOEcvmUlpE1FPRO6OKsCezWbHRkyR5DgFWPFrjFQuefoHYV1WO39N3L/UvQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -4567,9 +4567,9 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@fontsource-variable/roboto-condensed@5.2.6': {}
+  '@fontsource-variable/roboto-condensed@5.2.7': {}
 
-  '@fontsource-variable/roboto-slab@5.2.6': {}
+  '@fontsource-variable/roboto-slab@5.2.7': {}
 
   '@humanfs/core@0.19.1': {}
 
