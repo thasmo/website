@@ -40,7 +40,7 @@
 		"@builder.io/qwik": "^1.5.1",
 		"@builder.io/qwik-city": "^1.5.1",
 		"@builder.io/vite-plugin-macro": "~0.0.7",
-		"@commitlint/cli": "^19.3.0",
+		"@commitlint/cli": "^20.0.0",
 		"@pandacss/dev": "^1.0.0",
 		"@somehow-digital/commitlint-config": "^1.0.0",
 		"@somehow-digital/cspell-dictionary": "^2.0.0",
