@@ -46,7 +46,7 @@
 		"@somehow-digital/cspell-dictionary": "^2.0.0",
 		"@somehow-digital/eslint-config": "^4.0.0",
 		"@somehow-digital/typescript-config": "^3.0.0",
-		"@types/node": "^22.0.0",
+		"@types/node": "^24.0.0",
 		"autoprefixer": "^10.4.18",
 		"concurrently": "^9.0.0",
 		"cspell": "^9.0.0",
