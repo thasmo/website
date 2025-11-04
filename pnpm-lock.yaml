@@ -17,10 +17,10 @@ importers:
     devDependencies:
       '@builder.io/qwik':
         specifier: ^1.5.1
-        version: 1.17.1(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(yaml@2.8.1))
+        version: 1.17.2(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(yaml@2.8.1))
       '@builder.io/qwik-city':
         specifier: ^1.5.1
-        version: 1.17.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)
+        version: 1.17.2(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)
       '@builder.io/vite-plugin-macro':
         specifier: ~0.0.7
         version: 0.0.7(@types/node@24.10.0)(lightningcss@1.25.1)(rollup@4.52.5)
@@ -206,12 +206,12 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
-  '@builder.io/qwik-city@1.17.1':
-    resolution: {integrity: sha512-cA1bUPHbXMUu7vFxW/IXenW/fceQrmLb4ZtG6y3mh/5gpHZ6omiatyhZGoOpvkVQ5Svo8i0Nopotui2Exd9VFw==}
+  '@builder.io/qwik-city@1.17.2':
+    resolution: {integrity: sha512-FiAyxe9xaKeCxcEnXYMPGI9Rpz6QI89MJCmbTbYdqsT4UAL716q6exN2UtvOps1OVtnjI8EdeCy1/Car6k2GQQ==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
 
-  '@builder.io/qwik@1.17.1':
-    resolution: {integrity: sha512-Xw7txMopQcsnT8W4K+QgTiwZxrlAfwu2sM6CZwJ60aK5z3JpZexA4YUzptJ1VJcQ9bdypHDfLbcNzI3ubUT8Ag==}
+  '@builder.io/qwik@1.17.2':
+    resolution: {integrity: sha512-RLtiF0cA1ZSEV/o05cM38V0vkW/cP+O3pCjqcjxPWl/TYgPqZSPhy2MaT0tBDpwx5gOhq53uaRiq+/Gq8+oFqA==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     hasBin: true
     peerDependencies:
@@ -549,8 +549,8 @@ packages:
   '@dprint/toml@0.6.4':
     resolution: {integrity: sha512-bZXIUjxr0LIuHWshZr/5mtUkOrnh0NKVZEF6ACojW5z7zkJu7s9sV2mMXm8XQDqN4cJzdHYUYzUyEGdfciaLJA==}
 
-  '@emnapi/runtime@1.6.0':
-    resolution: {integrity: sha512-obtUmAHTMjll499P+D9A3axeJFlhdjOWdKUNs/U6QIGT7V5RjcUW1xToAzjvmgTSQhDbYn/NwfTRoJcQ2rNBxA==}
+  '@emnapi/runtime@1.7.0':
+    resolution: {integrity: sha512-oAYoQnCYaQZKVS53Fq23ceWMRxq5EhQsE0x0RdQ55jT7wagMu5k+fS39v1fiSLrtrLQlXwVINenqhLMtTrV/1Q==}
 
   '@es-joy/jsdoccomment@0.50.2':
     resolution: {integrity: sha512-YAdE/IJSpwbOTiaURNCKECdAwqrJuFiZhylmesBcIRawtYKnBR2wxPhoIewMg+Yu+QuYvHfJNReWpoxGBKOChA==}
@@ -2518,8 +2518,8 @@ packages:
     resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  inline-style-parser@0.2.4:
-    resolution: {integrity: sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==}
+  inline-style-parser@0.2.6:
+    resolution: {integrity: sha512-gtGXVaBdl5mAes3rPcMedEBm12ibjt1kDMFfheul1wUAOVEJW60voNdMVzVkfLN06O7ZaD/rxhfKgtlgtTbMjg==}
 
   is-alphabetical@2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
@@ -3454,11 +3454,11 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  style-to-js@1.1.18:
-    resolution: {integrity: sha512-JFPn62D4kJaPTnhFUI244MThx+FEGbi+9dw1b9yBBQ+1CZpV7QAT8kUtJ7b7EUNdHajjF/0x8fT+16oLJoojLg==}
+  style-to-js@1.1.19:
+    resolution: {integrity: sha512-Ev+SgeqiNGT1ufsXyVC5RrJRXdrkRJ1Gol9Qw7Pb72YCKJXrBvP0ckZhBeVSrw2m06DJpei2528uIpjMb4TsoQ==}
 
-  style-to-object@1.0.11:
-    resolution: {integrity: sha512-5A560JmXr7wDyGLK12Nq/EYS38VkGlglVzkis1JEdbGWSnbQIEhZzTJhzURXN5/8WwwFCs/f/VVcmkTppbXLow==}
+  style-to-object@1.0.12:
+    resolution: {integrity: sha512-ddJqYnoT4t97QvN2C95bCgt+m7AAgXjVnkk/jxAfmp7EAB8nnqqZYEbMd3em7/vEomDb2LAQKAy1RFfv41mdNw==}
 
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
@@ -3984,7 +3984,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@builder.io/qwik-city@1.17.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)':
+  '@builder.io/qwik-city@1.17.2(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)':
     dependencies:
       '@mdx-js/mdx': 3.1.1
       '@types/mdx': 2.0.13
@@ -4012,7 +4012,7 @@ snapshots:
       - typescript
       - yaml
 
-  '@builder.io/qwik@1.17.1(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(yaml@2.8.1))':
+  '@builder.io/qwik@1.17.2(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.25.1)(yaml@2.8.1))':
     dependencies:
       csstype: 3.1.3
       launch-editor: 2.12.0
@@ -4401,7 +4401,7 @@ snapshots:
 
   '@dprint/toml@0.6.4': {}
 
-  '@emnapi/runtime@1.6.0':
+  '@emnapi/runtime@1.7.0':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -4828,7 +4828,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.4':
     dependencies:
-      '@emnapi/runtime': 1.6.0
+      '@emnapi/runtime': 1.7.0
     optional: true
 
   '@img/sharp-win32-arm64@0.34.4':
@@ -6622,7 +6622,7 @@ snapshots:
       mdast-util-mdxjs-esm: 2.0.1
       property-information: 7.1.0
       space-separated-tokens: 2.0.2
-      style-to-js: 1.1.18
+      style-to-js: 1.1.19
       unist-util-position: 5.0.0
       zwitch: 2.0.4
     transitivePeerDependencies:
@@ -6642,7 +6642,7 @@ snapshots:
       mdast-util-mdxjs-esm: 2.0.1
       property-information: 7.1.0
       space-separated-tokens: 2.0.2
-      style-to-js: 1.1.18
+      style-to-js: 1.1.19
       unist-util-position: 5.0.0
       vfile-message: 4.0.3
     transitivePeerDependencies:
@@ -6675,7 +6675,7 @@ snapshots:
 
   ini@4.1.1: {}
 
-  inline-style-parser@0.2.4: {}
+  inline-style-parser@0.2.6: {}
 
   is-alphabetical@2.0.1: {}
 
@@ -7868,13 +7868,13 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  style-to-js@1.1.18:
+  style-to-js@1.1.19:
     dependencies:
-      style-to-object: 1.0.11
+      style-to-object: 1.0.12
 
-  style-to-object@1.0.11:
+  style-to-object@1.0.12:
     dependencies:
-      inline-style-parser: 0.2.4
+      inline-style-parser: 0.2.6
 
   supports-color@7.2.0:
     dependencies:
