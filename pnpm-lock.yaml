@@ -17,22 +17,22 @@ importers:
     devDependencies:
       '@builder.io/qwik':
         specifier: ^1.5.1
-        version: 1.17.2(vite@7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
+        version: 1.17.2(vite@7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
       '@builder.io/qwik-city':
         specifier: ^1.5.1
-        version: 1.17.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)(yaml@2.8.2)
+        version: 1.17.2(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)(yaml@2.8.2)
       '@builder.io/vite-plugin-macro':
         specifier: ~0.0.7
-        version: 0.0.7(@types/node@24.10.1)(lightningcss@1.30.2)(rollup@4.53.3)
+        version: 0.0.7(@types/node@24.10.3)(lightningcss@1.30.2)(rollup@4.53.3)
       '@commitlint/cli':
         specifier: ^20.0.0
-        version: 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+        version: 20.2.0(@types/node@24.10.3)(typescript@5.9.3)
       '@pandacss/dev':
         specifier: ^1.0.0
         version: 1.7.0(typescript@5.9.3)
       '@somehow-digital/commitlint-config':
         specifier: ^1.0.0
-        version: 1.1.0(@commitlint/cli@20.2.0(@types/node@24.10.1)(typescript@5.9.3))(cspell@9.4.0)
+        version: 1.1.0(@commitlint/cli@20.2.0(@types/node@24.10.3)(typescript@5.9.3))(cspell@9.4.0)
       '@somehow-digital/cspell-dictionary':
         specifier: ^2.0.0
         version: 2.13.0(cspell@9.4.0)
@@ -44,7 +44,7 @@ importers:
         version: 3.0.0(typescript@5.9.3)
       '@types/node':
         specifier: ^24.0.0
-        version: 24.10.1
+        version: 24.10.3
       autoprefixer:
         specifier: ^10.4.18
         version: 10.4.22(postcss@8.5.6)
@@ -71,10 +71,10 @@ importers:
         version: 7.16.0
       vite:
         specifier: ^7.0.0
-        version: 7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
+        version: 7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
       vite-tsconfig-paths:
         specifier: ^5.0.0
-        version: 5.1.4(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
+        version: 5.1.4(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
 
 packages:
 
@@ -1400,8 +1400,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@24.10.1':
-    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+  '@types/node@24.10.3':
+    resolution: {integrity: sha512-gqkrWUsS8hcm0r44yn7/xZeV1ERva/nLgrLxFRUGb7aoNMIJfZJ3AC261zDQuOAKC7MiXai1WCpYc48jAHoShQ==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -3980,7 +3980,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@builder.io/qwik-city@1.17.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)(yaml@2.8.2)':
+  '@builder.io/qwik-city@1.17.2(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       '@mdx-js/mdx': 3.1.1
       '@types/mdx': 2.0.13
@@ -3989,7 +3989,7 @@ snapshots:
       undici: 7.16.0
       valibot: 1.2.0(typescript@5.9.3)
       vfile: 6.0.3
-      vite: 7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
       vite-imagetools: 9.0.2(rollup@4.53.3)
       zod: 3.25.48
     transitivePeerDependencies:
@@ -4008,18 +4008,18 @@ snapshots:
       - typescript
       - yaml
 
-  '@builder.io/qwik@1.17.2(vite@7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))':
+  '@builder.io/qwik@1.17.2(vite@7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))':
     dependencies:
       csstype: 3.2.3
       launch-editor: 2.12.0
       rollup: 4.53.3
-      vite: 7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
 
-  '@builder.io/vite-plugin-macro@0.0.7(@types/node@24.10.1)(lightningcss@1.30.2)(rollup@4.53.3)':
+  '@builder.io/vite-plugin-macro@0.0.7(@types/node@24.10.3)(lightningcss@1.30.2)(rollup@4.53.3)':
     dependencies:
       '@rollup/pluginutils': 5.3.0(rollup@4.53.3)
       magic-string: 0.30.21
-      vite-node: 0.32.4(@types/node@24.10.1)(lightningcss@1.30.2)
+      vite-node: 0.32.4(@types/node@24.10.3)(lightningcss@1.30.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4042,11 +4042,11 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@commitlint/cli@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/cli@20.2.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.2.0
       '@commitlint/lint': 20.2.0
-      '@commitlint/load': 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+      '@commitlint/load': 20.2.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/read': 20.2.0
       '@commitlint/types': 20.2.0
       tinyexec: 1.0.2
@@ -4093,7 +4093,7 @@ snapshots:
       '@commitlint/rules': 20.2.0
       '@commitlint/types': 20.2.0
 
-  '@commitlint/load@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/load@20.2.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.2.0
       '@commitlint/execute-rule': 20.0.0
@@ -4101,7 +4101,7 @@ snapshots:
       '@commitlint/types': 20.2.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -5142,9 +5142,9 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
 
-  '@somehow-digital/commitlint-config@1.1.0(@commitlint/cli@20.2.0(@types/node@24.10.1)(typescript@5.9.3))(cspell@9.4.0)':
+  '@somehow-digital/commitlint-config@1.1.0(@commitlint/cli@20.2.0(@types/node@24.10.3)(typescript@5.9.3))(cspell@9.4.0)':
     dependencies:
-      '@commitlint/cli': 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+      '@commitlint/cli': 20.2.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/config-conventional': 19.8.1
       '@somehow-digital/commitlint-plugin-spellcheck': 1.1.0(cspell@9.4.0)
     transitivePeerDependencies:
@@ -5212,7 +5212,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.2':
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.3
 
   '@types/debug@4.1.12':
     dependencies:
@@ -5240,7 +5240,7 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@24.10.1':
+  '@types/node@24.10.3':
     dependencies:
       undici-types: 7.16.0
 
@@ -5687,9 +5687,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.3
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
       typescript: 5.9.3
@@ -8027,14 +8027,14 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-node@0.32.4(@types/node@24.10.1)(lightningcss@1.30.2):
+  vite-node@0.32.4(@types/node@24.10.3)(lightningcss@1.30.2):
     dependencies:
       cac: 6.7.14
       debug: 4.4.3
       mlly: 1.8.0
       pathe: 1.1.2
       picocolors: 1.1.1
-      vite: 4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)
+      vite: 4.5.14(@types/node@24.10.3)(lightningcss@1.30.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8045,28 +8045,28 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)):
+  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.3)
     optionalDependencies:
-      vite: 7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@4.5.14(@types/node@24.10.1)(lightningcss@1.30.2):
+  vite@4.5.14(@types/node@24.10.3)(lightningcss@1.30.2):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.5.6
       rollup: 3.29.5
     optionalDependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.3
       fsevents: 2.3.3
       lightningcss: 1.30.2
 
-  vite@7.2.7(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2):
+  vite@7.2.7(@types/node@24.10.3)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -8075,7 +8075,7 @@ snapshots:
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.3
       fsevents: 2.3.3
       jiti: 2.6.1
       lightningcss: 1.30.2
