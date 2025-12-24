@@ -56,7 +56,7 @@
 		"typescript": "^5.5.4",
 		"undici": "^7.0.0",
 		"vite": "^7.0.0",
-		"vite-tsconfig-paths": "^5.0.0"
+		"vite-tsconfig-paths": "^6.0.0"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
