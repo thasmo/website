@@ -1,0 +1,16 @@
+---
+import ChannelIcon from '../icons/channel.astro';
+
+const { address, class: className, color, title, type, ...properties } = Astro.props;
+---
+
+<a
+	class:list={['items-center text-[#ccc] flex flex-grow text-28px justify-center relative no-underline transition-[color,opacity,background] duration-250ms', className]}
+	href={address}
+	rel="me noopener"
+	style={`--color: ${color};`}
+	title={title}
+	{...properties}
+>
+	<ChannelIcon type={type} />
+</a>

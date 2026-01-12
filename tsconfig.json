@@ -1,8 +1,5 @@
 {
-	"extends": "@somehow-digital/typescript-config/qwik",
-	"compilerOptions": {
-		"paths": {
-			"~/*": ["./src/*"]
-		}
-	}
+	"extends": "@somehow-digital/typescript-config/basic",
+	"include": ["./.astro/types.d.ts", "./**/*"],
+	"exclude": ["./dist/"]
 }

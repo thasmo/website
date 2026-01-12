@@ -1,0 +1,21 @@
+---
+import { generateHash } from './gravatar.utilities';
+
+const { email, size, ...properties } = Astro.props;
+
+const hash = await generateHash(email);
+const low = `https://avatar.thasmo.com/${hash}/${size}`;
+const high = `https://avatar.thasmo.com/${hash}/${size * 2}`;
+---
+
+<div class="grid">
+	<img
+		class="grid-area-[1/-1] relative z-1"
+		decoding="async"
+		height={size}
+		src={low}
+		srcset={`${low} 1x, ${high} 2x`}
+		width={size}
+		{...properties}
+	/>
+</div>

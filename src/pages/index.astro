@@ -1,0 +1,12 @@
+---
+import Profile from '../components/profile/profile.astro';
+import profile from '../data/profile.json';
+import Layout from '../layouts/default.astro';
+
+const title = `${profile.name} · ${profile.pseudonym}`;
+const description = profile.biography;
+---
+
+<Layout title={title} description={description}>
+	<Profile />
+</Layout>

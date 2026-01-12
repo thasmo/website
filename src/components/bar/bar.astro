@@ -1,0 +1,75 @@
+---
+import Channel from '../channel/channel.astro';
+import PanelClose from '../icons/panel-close.astro';
+import PanelOpen from '../icons/panel-open.astro';
+
+interface Props {
+	channels: any[];
+	class?: string;
+	[key: string]: any;
+}
+
+const { channels, class: className, ...properties } = Astro.props;
+---
+
+<aside class:list={['dark:bg-void bg-blank bottom-0 flex h-50px m-0 fixed right-0 group sm:bottom-0 sm:h-100% sm:p-t-50px sm:right-0 sm:top-0 sm:w-50px w-100% z-1', className]} {...properties}>
+	<p class="transition-[opacity,background,transform,translate] group m-0 opacity-100 flex w-80% duration-250ms float-left overflow-hidden sm:flex-col sm:h-100% sm:w-100% sm:group-[.is-active]:opacity-0 sm:group-[.is-active]:translate-x-full">
+		{channels
+			.filter((channel: any) => channel.primary)
+			.map((channel: any) => (
+				<Channel
+					address={channel.address}
+					class="group-hover:opacity-0 group-hover:hover:text-blank group-hover:hover:bg-[var(--color)] group-hover:hover:opacity-100"
+					color={channel.color}
+					title={channel.title}
+					type={channel.type}
+				/>
+			))}
+	</p>
+
+	<button
+		class="text-24px text-center flex flex-grow w-20% aspect-square rotate-90deg transition-colors duration-250ms items-center float-right justify-center active:text-accent hover:text-accent sm:w-100% sm:rotate-0 sm:float-none sm:right-0 sm:top-0 sm:position-absolute"
+		title="toggle information"
+		type="button"
+		id="toggle-button"
+	>
+		<span class="open-icon"><PanelOpen /></span>
+		<span class="close-icon hidden"><PanelClose /></span>
+	</button>
+</aside>
+
+<script>
+	const button = document.getElementById('toggle-button');
+	const openIcon = button?.querySelector('.open-icon');
+	const closeIcon = button?.querySelector('.close-icon');
+
+	button?.addEventListener('click', () => {
+		const isOpening = closeIcon?.classList.contains('hidden');
+		openIcon?.classList.toggle('hidden');
+		closeIcon?.classList.toggle('hidden');
+
+		const event = new CustomEvent('toggle', { detail: { open: isOpening } });
+		button?.closest('aside')?.dispatchEvent(event);
+	});
+
+	// Listen for changes from outside
+	document.addEventListener('click', () => {
+		const aside = button?.closest('aside');
+		if (aside && !aside.classList.contains('is-active')) {
+			openIcon?.classList.remove('hidden');
+			closeIcon?.classList.add('hidden');
+		}
+	});
+</script>
+
+<style>
+	aside.is-active .open-icon {
+		display: none;
+	}
+	aside.is-active .close-icon {
+		display: inline;
+	}
+	.hidden {
+		display: none;
+	}
+</style>

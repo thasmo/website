@@ -1,0 +1,30 @@
+---
+const { class: className, ...properties } = Astro.props;
+---
+
+<main
+	class:list={[
+		'dark:bg-void bg-subtle bottom-0 opacity-0 overflow-auto fixed right-0 sm:bg-blank dark:sm:bg-void sm:bottom-0 sm:max-w-[calc(100vw-50px)] sm:opacity-100 sm:right-50px sm:translate-x-full sm:w-640px text-left top-0 transition-[visibility,opacity,transform,translate] duration-250ms invisible w-100vw z-1',
+		'[&.is-active]:opacity-100 [&.is-active]:visible sm:[&.is-active]:opacity-100 sm:[&.is-active]:translate-x-0',
+		className,
+	]}
+	{...properties}
+>
+	<section class="p-25px p-b-75px sm:p-[75px_125px_75px_75px]">
+		<slot />
+	</section>
+</main>
+
+<style>
+	main.is-active {
+		opacity: 1;
+		visibility: visible;
+	}
+	@media (min-width: 480px) {
+		main.is-active {
+			opacity: 1;
+			transform: translateX(0);
+			translate: 0;
+		}
+	}
+</style>

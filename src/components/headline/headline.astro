@@ -1,0 +1,24 @@
+---
+interface Props {
+	level?: 1 | 2 | 3;
+	tag?: string;
+	class?: string;
+	[key: string]: any;
+}
+
+const { level = 1, tag, class: className, ...properties } = Astro.props;
+const HeadlineTag = tag || `h${level}`;
+
+// Map level to UnoCSS shortcuts defined in uno.config.ts
+const levelClasses = {
+	1: 'h1',
+	2: 'h2',
+	3: 'h3',
+} as const;
+
+const classes = levelClasses[level as keyof typeof levelClasses] || '';
+---
+
+<HeadlineTag class:list={[classes, className]} {...properties}>
+	<slot />
+</HeadlineTag>

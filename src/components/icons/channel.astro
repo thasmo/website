@@ -1,0 +1,30 @@
+---
+import Bluesky from './channels/bluesky.astro';
+import Email from './channels/email.astro';
+import GitHub from './channels/github.astro';
+import LinkedIn from './channels/linkedin.astro';
+import Resume from './channels/resume.astro';
+import StackOverflow from './channels/stackoverflow.astro';
+import Xing from './channels/xing.astro';
+
+const icons = {
+	bluesky: Bluesky,
+	email: Email,
+	github: GitHub,
+	linkedin: LinkedIn,
+	resume: Resume,
+	stackoverflow: StackOverflow,
+	xing: Xing,
+};
+
+interface Props {
+	type: keyof typeof icons;
+	[key: string]: any;
+}
+
+const { type, ...properties } = Astro.props;
+
+const Icon = icons[type];
+---
+
+{Icon && <Icon {...properties} />}

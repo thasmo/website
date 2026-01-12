@@ -1,7 +1,8 @@
+/.astro/
+/.netlify/
+/.wrangler/
 /node_modules/
-/src/styles/
 /dist/
-/server/
-/tmp/
-
-tsconfig.tsbuildinfo
+/public/assets/fonts/
+.env
+worker-configuration.d.ts

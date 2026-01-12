@@ -1,0 +1,15 @@
+---
+import Headline from '../headline/headline.astro';
+
+const { title, ...properties } = Astro.props;
+---
+
+<section class="mb-48px last:mb-0" {...properties}>
+	<Headline class="mb-0.5em" level={2}>
+		{title}
+	</Headline>
+
+	<div class="ml-16px">
+		<slot />
+	</div>
+</section>
