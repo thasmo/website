@@ -1,0 +1,24 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "thasmo-website",
+	"main": "dist/_worker.js/index.js",
+	"compatibility_date": "2025-01-12",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1
+	},
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist/"
+	},
+	"routes": [
+		{
+			"pattern": "thasmo.com",
+			"custom_domain": true
+		}
+	]
+}

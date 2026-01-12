@@ -4,3 +4,5 @@ gridable
 gaoo
 fediverse
 bluesky
+fontshare
+playform

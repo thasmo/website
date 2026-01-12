@@ -1,0 +1,15 @@
+---
+import Headline from '../headline/headline.astro';
+
+const { address, description, name, ...properties } = Astro.props;
+---
+
+<article class="mb-24px" {...properties}>
+	<Headline class="mb-4px" level={3}>
+		<a href={address} rel="noopener">
+			{name}
+		</a>
+	</Headline>
+
+	{description && <p>{description}</p>}
+</article>

@@ -1,0 +1,91 @@
+---
+import Bar from '../components/bar/bar.astro';
+import Body from '../components/body.astro';
+import Contact from '../components/contact/contact.astro';
+import Head from '../components/head.astro';
+import Headline from '../components/headline/headline.astro';
+import Panel from '../components/panel/panel.astro';
+import Project from '../components/project/project.astro';
+import Section from '../components/section/section.astro';
+import Stage from '../components/stage/stage.astro';
+import channels from '../data/channels.json';
+import profile from '../data/profile.json';
+import projects from '../data/projects.json';
+
+const { title, description } = Astro.props;
+const locale = Astro.currentLocale;
+---
+<html lang={locale}>
+	<Head title={title} description={description}>
+		<slot name="head" />
+	</Head>
+
+	<Body>
+		<Stage>
+			<slot />
+
+			<Panel id="panel">
+				<header class="mb-48px">
+					<Headline class="mb-0.5em" level={1}>
+						{profile.name}
+					</Headline>
+
+					<p>
+						<b>
+							{profile.position}
+							{' '}
+							from
+							{profile.location}
+							,
+						</b>
+						<wbr />
+						pushing the web's boundaries at
+						<a href={profile.employer.website} rel="noopener">
+							{profile.employer.name}
+						</a>.
+					</p>
+				</header>
+
+				<Section title="Side Projects">
+					{projects.map(project => (
+						<Project
+							address={project.address}
+							description={project.description}
+							name={project.name}
+						/>
+					))}
+				</Section>
+
+				<Section title="Contact">
+					{channels.map(channel => (
+						<p>
+							<Contact address={channel.address} label={channel.label} type={channel.type} />
+						</p>
+					))}
+				</Section>
+			</Panel>
+
+			<Bar id="bar" channels={channels} />
+		</Stage>
+
+		<script>
+			const bar = document.getElementById('bar');
+			const panel = document.getElementById('panel');
+
+			if (bar && panel) {
+				document.addEventListener('click', (event) => {
+					const target = event.target as Node;
+					if (!panel.contains(target) && !bar.contains(target)) {
+						panel.classList.remove('is-active');
+						bar.classList.remove('is-active');
+					}
+				});
+
+				bar.addEventListener('toggle', () => {
+					panel.classList.toggle('is-active');
+					bar.classList.toggle('is-active');
+				});
+			}
+		</script>
+	</Body>
+</html>

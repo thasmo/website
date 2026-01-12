@@ -1,0 +1,7 @@
+---
+const { class: className, ...properties } = Astro.props;
+---
+
+<div class:list={['dark:bg-base dark:text-subtle bg-subtle h-100vh overflow-hidden relative w-100vw flex items-center justify-center', className]} {...properties}>
+	<slot />
+</div>

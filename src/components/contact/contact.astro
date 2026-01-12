@@ -1,0 +1,10 @@
+---
+import ChannelIcon from '../icons/channel.astro';
+
+const { address, label, type, ...properties } = Astro.props;
+---
+
+<a class="text-18px" href={address} rel="noopener" {...properties}>
+	<ChannelIcon class="vertical-align-middle text-125% mr-10px inline-block top--2px relative" type={type} />
+	{label}
+</a>

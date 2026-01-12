@@ -1,0 +1,18 @@
+---
+import profile from '../../data/profile.json';
+import Gravatar from '../gravatar/gravatar.astro';
+
+const { class: className, ...properties } = Astro.props;
+---
+
+<div class:list={['inline-block max-w-99% relative transition-[opacity,filter,transform] duration-250ms w-256px', className]} {...properties}>
+	<figure class="m-0 relative">
+		<span class="rounded-full bg-blank block overflow-hidden">
+			<Gravatar alt={`Photo of ${profile.name}`} email={profile.email} size={256} />
+		</span>
+
+		<a class="rounded-2px bg-void opacity-100 h-72px w-72px block transition-opacity duration-250ms bottom-0 right-0 absolute overflow-hidden" href={profile.employer.website} rel="noopener">
+			<Gravatar alt={`Photo of ${profile.employer.name}`} email={profile.employer.email} size={72} />
+		</a>
+	</figure>
+</div>
