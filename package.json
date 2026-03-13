@@ -25,9 +25,9 @@
 		"fix:knip": "knip --fix --no-progress --workspace ."
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^12.6.12",
+		"@astrojs/cloudflare": "^13.0.0",
 		"@astrojs/sitemap": "^3.2.1",
-		"astro": "^5.16.9"
+		"astro": "^6.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^20.0.0",
