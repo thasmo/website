@@ -1,6 +1,5 @@
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
-import inline from '@playform/inline';
 import { defineConfig } from 'astro/config';
 import unocss from 'unocss/astro';
 
@@ -16,11 +15,6 @@ export default defineConfig({
 	integrations: [
 		unocss(),
 		sitemap(),
-		inline({
-			Beasties: {
-				preload: 'swap',
-			},
-		}),
 	],
 	prefetch: {
 		defaultStrategy: 'tap',
