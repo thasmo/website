@@ -6,3 +6,5 @@ fediverse
 bluesky
 fontshare
 playform
+esbuild
+workerd
