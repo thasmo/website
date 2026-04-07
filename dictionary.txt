@@ -8,3 +8,4 @@ fontshare
 playform
 esbuild
 workerd
+trufflesecurity
