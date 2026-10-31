@@ -9,3 +9,4 @@ playform
 esbuild
 workerd
 trufflesecurity
+voidzero
