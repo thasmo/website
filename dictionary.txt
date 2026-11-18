@@ -10,3 +10,4 @@ esbuild
 workerd
 trufflesecurity
 voidzero
+tsrs
