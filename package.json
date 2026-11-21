@@ -18,6 +18,7 @@
 		"prepare:astro": "astro sync",
 		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
 		"lint:eslint": "eslint .",
+		"lint:astro": "astro check",
 		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files .",
 		"lint:knip": "knip --no-progress",
 		"fix": "concurrently --group --prefix-colors 'auto' 'pnpm:fix:*'",
@@ -30,6 +31,7 @@
 		"astro": "^7.0.0"
 	},
 	"devDependencies": {
+		"@astrojs/check": "^0.9.12",
 		"@commitlint/cli": "^21.0.0",
 		"@somehow-digital/commitlint-config": "^1.0.0",
 		"@somehow-digital/cspell-dictionary": "^2.0.0",
