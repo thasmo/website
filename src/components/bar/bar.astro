@@ -39,27 +39,29 @@ const { channels, class: className, ...properties } = Astro.props;
 </aside>
 
 <script>
-	const button = document.getElementById('toggle-button');
-	const openIcon = button?.querySelector('.open-icon');
-	const closeIcon = button?.querySelector('.close-icon');
+const button = document.getElementById('toggle-button');
+const openIcon = button?.querySelector('.open-icon');
+const closeIcon = button?.querySelector('.close-icon');
 
-	button?.addEventListener('click', () => {
-		const isOpening = closeIcon?.classList.contains('hidden');
-		openIcon?.classList.toggle('hidden');
-		closeIcon?.classList.toggle('hidden');
+button?.addEventListener('click', () => {
+	const isOpening = closeIcon?.classList.contains('hidden');
+	openIcon?.classList.toggle('hidden');
+	closeIcon?.classList.toggle('hidden');
 
-		const event = new CustomEvent('toggle', { detail: { open: isOpening } });
-		button?.closest('aside')?.dispatchEvent(event);
+	const event = new CustomEvent('toggle', {
+		detail: { open: isOpening },
 	});
+	button?.closest('aside')?.dispatchEvent(event);
+});
 
-	// Listen for changes from outside
-	document.addEventListener('click', () => {
-		const aside = button?.closest('aside');
-		if (aside && !aside.classList.contains('is-active')) {
-			openIcon?.classList.remove('hidden');
-			closeIcon?.classList.add('hidden');
-		}
-	});
+// Listen for changes from outside
+document.addEventListener('click', () => {
+	const aside = button?.closest('aside');
+	if (aside && !aside.classList.contains('is-active')) {
+		openIcon?.classList.remove('hidden');
+		closeIcon?.classList.add('hidden');
+	}
+});
 </script>
 
 <style>
